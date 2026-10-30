@@ -23,6 +23,5 @@ $('#submit').onclick=()=>{const text=$('#explanation').value.trim();if(!text){$(
 $('#help').onclick=()=>{data.log.push({event:'hint',taskId:task.id,code:task.code,at:new Date().toISOString()});const hint=nextHint(task,state.order);save();paint();$('#result').textContent=hint;};
 $('#retry').onclick=()=>{state=start(task);save();paint();$('#result').textContent='카드를 다시 놓았어요. 앞서 남긴 기록은 보관돼요.';};
 $('#save-review').onclick=()=>{data.review=$('#review').value;save();$('#review-status').textContent='피드백을 저장했어요.';};
-$('#export').onclick=()=>{const result={game:'logic-link',version:2,exportedAt:new Date().toISOString(),...data,summary:report(data.log,Object.keys(labels)),scope:'제시된 6개 도형 영역의 순서 표본. 설명은 별도 검토 필요. 공식 이수 판정 아님.'};const a=document.createElement('a');const url=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));a.href=url;a.download='logic-link-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('#new-learner').onclick=()=>$('#new-dialog').showModal();$('#cancel-new').onclick=()=>$('#new-dialog').close();$('#confirm-new').onclick=()=>{try{localStorage.setItem(key+':archive:'+Date.now(),JSON.stringify(data));}catch{}data={log:[],drafts:{},current:tasks[0].id,review:''};task=tasks[0];state=start(task);save();paint();$('#new-dialog').close();$('#result').textContent='새 노트를 열었어요.';};
 paint();

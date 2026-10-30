@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T06:00:10.066Z",
-  "sourceHash": "bd2a251e0da725f4e17d5b542164b34b75bc67992a2f223d4339576e925d1a27",
+  "checkedAt": "2026-10-30T06:17:07.245Z",
+  "sourceHash": "cb7abe029b533ad0b2587a3dadb6c899b1c7106c0bd52f0b8374f303412e58dd",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -44,7 +44,7 @@
     "retry": true,
     "persistence": true,
     "report": true,
-    "export": true,
+    "export": false,
     "mobile": true,
     "codes": [
       "9수03-09",
@@ -56,7 +56,8 @@
     ],
     "tasksPlayed": 2,
     "tasksAutomated": 12,
-    "note": "Actual new proof submissions, wrong first answer/hint/retry tracked; six domain report visible; export downloaded and feedback saved. All 12 dependency graphs automated."
+    "note": "Actual new proof submissions, wrong first answer/hint/retry tracked; six domain report visible; export downloaded and feedback saved. All 12 dependency graphs automated.",
+    "jsonUiRemoved": true
   },
   "typography": {
     "status": "passed",
@@ -65,5 +66,24 @@
   },
   "consoleErrors": [],
   "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available.",
-  "finalVisualCheck": "Shelf button padding corrected; desktop and 390px construction shelf verified after CSS-only change."
+  "finalVisualCheck": "Shelf button padding corrected; desktop and 390px construction shelf verified after CSS-only change.",
+  "previousJsonUiReview": {
+    "checkedAt": "2026-10-30T06:00:10.066Z",
+    "sourceHash": "bd2a251e0da725f4e17d5b542164b34b75bc67992a2f223d4339576e925d1a27",
+    "export": true
+  },
+  "jsonUiRemoval": {
+    "status": "passed",
+    "checkedAt": "2026-10-30T06:16:46.888Z",
+    "scope": "JSON raw preview and download removed. Readable learning results and local progress storage retained. Gameplay, assessment grading and layout otherwise unchanged.",
+    "report": {
+      "exportButtons": 0,
+      "errors": []
+    },
+    "commonSubmission": {
+      "submitted": true,
+      "result": "내 답: 방정식",
+      "persistedAfterReload": true
+    }
+  }
 }

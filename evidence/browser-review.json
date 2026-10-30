@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T05:54:00.095Z",
-  "sourceHash": "947bdc5edac38e7fe336a626d920ed2f66588693e3458144878c4df4460eea56",
+  "checkedAt": "2026-10-30T05:59:46.759Z",
+  "sourceHash": {},
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -64,5 +64,6 @@
     "overflow": false
   },
   "consoleErrors": [],
-  "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available."
+  "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available.",
+  "finalVisualCheck": "Shelf button padding corrected; desktop and 390px construction shelf verified after CSS-only change."
 }

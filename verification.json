@@ -1,9 +1,11 @@
 {
   "schema": 1,
-  "status": "passed",
-  "checkedAt": "2026-10-30T05:54:00.522Z",
-  "sourceHash": "947bdc5edac38e7fe336a626d920ed2f66588693e3458144878c4df4460eea56",
+  "status": "failed",
+  "checkedAt": "2026-10-30T05:59:47.380Z",
+  "sourceHash": "bd2a251e0da725f4e17d5b542164b34b75bc67992a2f223d4339576e925d1a27",
   "testsPassed": true,
-  "errors": [],
+  "errors": [
+    "Browser review missing or stale"
+  ],
   "browser": "passed"
 }

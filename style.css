@@ -15,3 +15,6 @@ body{word-break:keep-all}.card-text{word-break:normal}@media(min-width:1051px){.
 .notebook #proof-board{margin:20px 0}.notebook textarea{display:block;width:100%;min-height:100px}
 [hidden]{display:none!important}
 @media(max-width:650px){body:has(#tutorial-root[data-step="0"]) .brief{display:block}body:has(#tutorial-root[data-step="0"]) .guide{display:none}}
+
+/* Keep shelf labels inside the illustrated button frame. */
+#book-grid .book{padding:42px 30px;min-height:180px}#book-grid .book small{line-height:1.5}

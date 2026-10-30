@@ -76,5 +76,21 @@
       "cancel outside",
       "touch hold and keyboard sensors"
     ]
+  },
+  "geometryReview": {
+    "date": "2026-10-30",
+    "campaign": 34,
+    "proof": 30,
+    "construction": 4,
+    "independentTasks": 12,
+    "practice": 1,
+    "implementation": "Problem-specific SVG figures with exact coordinates, marked givens, auxiliary lines, compass traces, and keyboard-accessible zoom dialog.",
+    "constraints": "Perpendicularity, parallelism, equality, circle membership, tangent distance, angle sectors, and construction dimensions are tested numerically."
+  },
+  "studentReadability": {
+    "date": "2026-10-30",
+    "shelf": "Centered title/unit; slate before restoration, jade after, completion check and stars; no repeated unrestored sentence.",
+    "math": "Self-hosted KaTeX for all problem/card/hint/tutorial mathematics. Original plaintext retained for accessibility, saved history and grading.",
+    "cards": "Dark ink and nine-slice parchment frame fit variable-length text and inline formulas on 390px screens."
   }
 }

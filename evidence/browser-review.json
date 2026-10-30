@@ -1,12 +1,21 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T06:17:07.245Z",
-  "sourceHash": "cb7abe029b533ad0b2587a3dadb6c899b1c7106c0bd52f0b8374f303412e58dd",
+  "checkedAt": "2026-10-30T07:04:22.387Z",
+  "sourceHash": "84814c8ff0e79eef01395e9155a91d6d21612a61f468c5da7a6aa7c2bbdba844",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
     "evidence/proof-success-mobile-v2.png",
-    "evidence/proof-notes-mobile-v2.png"
+    "evidence/proof-notes-mobile-v2.png",
+    "evidence/logic-figures-construction.png",
+    "evidence/logic-figures-mobile.png",
+    "evidence/logic-figures-notes-mobile.png",
+    "evidence/logic-figures-tutorial-mobile.png",
+    "evidence/logic-latex-tutorial-success.png",
+    "evidence/logic-latex-mobile.png",
+    "evidence/logic-latex-desktop.png",
+    "evidence/logic-shelf-mobile.png",
+    "evidence/logic-shelf-desktop.png"
   ],
   "campaign": {
     "roundsPlayed": 34,
@@ -66,7 +75,7 @@
   },
   "consoleErrors": [],
   "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available.",
-  "finalVisualCheck": "Shelf button padding corrected; desktop and 390px construction shelf verified after CSS-only change.",
+  "finalVisualCheck": "All geometry and card math checked at 390px; desktop and mobile shelf colors, mathematical typesetting, zoom and tutorial completion checked.",
   "previousJsonUiReview": {
     "checkedAt": "2026-10-30T06:00:10.066Z",
     "sourceHash": "bd2a251e0da725f4e17d5b542164b34b75bc67992a2f223d4339576e925d1a27",
@@ -85,5 +94,42 @@
       "result": "내 답: 방정식",
       "persistedAfterReload": true
     }
+  },
+  "previousGeometryReadabilityReview": {
+    "checkedAt": "2026-10-30T06:17:07.245Z",
+    "sourceHash": "cb7abe029b533ad0b2587a3dadb6c899b1c7106c0bd52f0b8374f303412e58dd"
+  },
+  "geometry": {
+    "status": "passed",
+    "campaignRendered": 34,
+    "independentRendered": 12,
+    "practiceRendered": 1,
+    "all47VisuallyReviewed": true,
+    "all47SvgTextWithinBounds": true,
+    "zoomDesktop": true,
+    "zoom390": true,
+    "escapeClose": true,
+    "notesUseTheirOwnPointNames": true
+  },
+  "readability": {
+    "status": "passed",
+    "mobileWidth": 390,
+    "campaignMathLayoutChecks": 34,
+    "notesMathLayoutChecks": 12,
+    "overflow": false,
+    "mathRenderErrors": 0,
+    "katexSelfHosted": true,
+    "nineSliceCardFrame": true,
+    "darkText": true,
+    "centeredShelf": true,
+    "restoredColorVerifiedWithOneWin": true,
+    "noUnrestoredSentence": true
+  },
+  "regression": {
+    "firstCampaignKeyboardWin": true,
+    "tutorialActualSuccess390": true,
+    "tutorialDidNotOverwriteProgress": true,
+    "zoomDoesNotChangeProgress": true,
+    "earlierFullCampaignChecksRetained": "Engine, levels, scoring and assessment conditions are unchanged; full campaign playthrough recorded above predates this visual revision."
   }
 }

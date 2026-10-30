@@ -1,12 +1,14 @@
+import {mathHtml} from './math-text.mjs';
 import {createProofBoard} from './dnd-board.mjs';
 
 import {levels,chapters,practice} from './levels.mjs';
 import {start,check,moveCard,nextHint,stars} from './engine.mjs';
-import {figure} from './figures.mjs';
+import {figure,mountFigureZoom} from './figures.mjs';
 import {createTutorialContext,mountTutorial} from './tutorial.mjs';
 import {bindSoundControls} from './sound.mjs';
 const $=s=>document.querySelector(s),ctx=createTutorialContext('logic-link'),sound=bindSoundControls('logic-link:sound');
 const renderBoard=createProofBoard(document.querySelector('#proof-board'));
+mountFigureZoom();
 const key='logic-link:save:v1';let save={completed:{},current:levels[0].id,drafts:{},history:[]};
 try{save={...save,...JSON.parse(ctx.storage.getItem(key)||'{}')};}catch{}
 save.completed=Object.fromEntries(Object.entries(save.completed).filter(([id])=>levels.some(l=>l.id===id)));
@@ -17,10 +19,10 @@ function restore(){const d=save.drafts[level.id];if(d&&d.levelId===level.id&&[..
 if(!ctx.practice)restore();
 function paint(){
  $('#chapter-label').textContent=ctx.practice?'같이 해보는 연습':('중'+level.grade+' · '+(level.kind==='construction'?'작도':'증명')+' · '+chapters.find(c=>c.grade===level.grade).name+' · '+level.unit);
- $('#book-title').textContent=level.title;$('.guide small').textContent=level.kind==='construction'?'자와 컴퍼스를 쓰는 순서를 이어요.':'왜 그런지, 이유를 이어 가요.';$('#problem').textContent=level.problem;$('#figure').innerHTML=figure(level.figure);
+ $('#book-title').textContent=level.title;$('.guide small').textContent=level.kind==='construction'?'자와 컴퍼스를 쓰는 순서를 이어요.':'왜 그런지, 이유를 이어 가요.';$('#problem').innerHTML=mathHtml(level.problem);$('#figure').innerHTML=figure(level);
  renderBoard({level,state,onMove:move});
  $('#attempts').textContent=state.won?'복원 완료 · '+'★'.repeat(stars(state)):state.locked?'이번 책은 잠시 닫혔어요':'남은 확인 '+(3-state.failures)+'번 · 필요한 카드 '+level.goal+'장';
- $('#feedback').textContent=state.feedback?.message||(level.kind==='construction'?'카드를 끌어 놓아 작도 순서를 맞춰 주세요.':'카드를 끌어 놓아 근거에서 결론까지 이어 주세요.');
+ $('#feedback').innerHTML=mathHtml(state.feedback?.message||(level.kind==='construction'?'카드를 끌어 놓아 작도 순서를 맞춰 주세요.':'카드를 끌어 놓아 근거에서 결론까지 이어 주세요.'));
  $('#check').disabled=state.won||state.locked;$('#hint').disabled=state.won||state.locked;$('#reset').textContent=state.locked?'다시 도전':'다시 놓기';
  const completed=Object.keys(save.completed).filter(id=>levels.some(l=>l.id===id)).length;
  $('#progress-label').textContent='복원한 책 '+completed+' / '+levels.length;$('#progress').max=levels.length;$('#progress').value=completed;
@@ -55,7 +57,7 @@ function paintLibrary(){
  $('#grade-tabs').innerHTML=chapters.map(c=>'<button data-grade="'+c.grade+'" class="'+(libraryGrade===c.grade?'selected':'')+'">중'+c.grade+' '+c.name+'</button>').join('');
  $('#collection').innerHTML=chapters.map(c=>{const earned=levels.filter(l=>l.grade===c.grade).every(l=>save.completed[l.id]);return '<div><img src="assets/reward.png" class="'+(earned?'':'locked-medal')+'" alt="'+c.reward+(earned?' 획득':' 미획득')+'"><small>'+c.reward+'</small></div>';}).join('');
  const search=$('#search').value.trim();
- $('#book-grid').innerHTML=levels.filter(l=>l.kind===libraryKind&&l.grade===libraryGrade&&(!search||(l.title+' '+l.unit+' '+l.problem).includes(search))).map(l=>'<button class="book" data-book="'+l.id+'"><strong>'+esc(l.title)+'</strong><small>'+esc(l.unit)+'</small><small class="earned">'+(save.completed[l.id]?'★'.repeat(save.completed[l.id]):'아직 복원하지 않은 책')+'</small></button>').join('')||'<p>찾는 책이 없어요. 다른 단원 이름으로 찾아보세요.</p>';
+ $('#book-grid').innerHTML=levels.filter(l=>l.kind===libraryKind&&l.grade===libraryGrade&&(!search||(l.title+' '+l.unit+' '+l.problem).includes(search))).map(l=>'<button class="book '+(save.completed[l.id]?'is-restored':'is-unrestored')+'" aria-label="'+esc(l.title)+(save.completed[l.id]?' · 복원 완료':' · 복원 전')+'" data-book="'+l.id+'"><strong>'+esc(l.title)+'</strong><small>'+esc(l.unit)+'</small><small class="earned" aria-hidden="true">'+(save.completed[l.id]?'✓ '+'★'.repeat(save.completed[l.id]):'')+'</small></button>').join('')||'<p>찾는 책이 없어요. 다른 단원 이름으로 찾아보세요.</p>';
 }
 function openLibrary(){paintLibrary();$('#library').showModal();}
 $('#library-open').onclick=openLibrary;$('#library-close').onclick=()=>$('#library').close();$('#search').oninput=paintLibrary;

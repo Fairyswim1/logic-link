@@ -18,3 +18,52 @@ body{word-break:keep-all}.card-text{word-break:normal}@media(min-width:1051px){.
 
 /* Keep shelf labels inside the illustrated button frame. */
 #book-grid .book{padding:42px 30px;min-height:180px}#book-grid .book small{line-height:1.5}
+
+/* Readable, expandable geometry for every proof and construction. */
+.math-figure{margin:14px 0 0;min-width:0}
+.math-figure svg,#figure .math-figure svg{display:block;width:100%;height:auto;max-height:none;margin:0;background:#faf4e4;border-radius:13px;aspect-ratio:360/260}
+.math-figure svg path,.math-figure svg circle{fill:none;stroke:#3a6b70;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.math-figure svg text,#figure .math-figure svg text{font:18px var(--control);fill:#20494c;text-anchor:middle;stroke:none}
+.math-figure svg .aux,#figure .math-figure svg .aux{stroke:#a78358;stroke-dasharray:5 4}
+.math-figure svg .compass,#figure .math-figure svg .compass{stroke:#a78358;stroke-dasharray:3 4;stroke-width:1.7}
+.math-figure svg .angle-mark,#figure .math-figure svg .angle-mark{stroke:#b77331;stroke-width:2.1}
+.math-figure svg .given-mark,.math-figure svg .right-mark{stroke:#537267;stroke-width:1.7}
+.math-figure svg .point,#figure .math-figure svg .point{fill:#325e60;stroke:none}
+.math-figure figcaption{font:14px/1.65 var(--body);color:#d2deca;margin:10px 0}
+.figure-expand{font:15px var(--control);padding:8px 13px;min-height:40px}
+#figure{width:100%;grid-column:auto;grid-row:auto;margin:0}
+.figure-dialog{max-width:800px;width:94vw;padding:20px}
+.figure-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.figure-dialog-head h2{font-size:26px}.figure-dialog-head button{white-space:nowrap}
+.figure-enlarged svg{max-height:65vh;width:100%}
+.notebook .note-mission{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,360px);gap:24px;align-items:center}
+@media(min-width:1051px){.workbench{grid-template-columns:minmax(310px,.9fr) minmax(0,2.4fr)}}
+@media(min-width:651px) and (max-width:1050px){.brief{display:block}.mission{grid-template-columns:1fr minmax(250px,320px);gap:0 24px}.mission #figure{grid-column:2;grid-row:1/3}.guide{display:none}}
+@media(max-width:650px){.math-figure{margin-top:12px}.notebook .note-mission{display:block}.figure-dialog{padding:15px}.figure-dialog-head h2{font-size:23px}}
+
+.math-figure svg text,#figure .math-figure svg text{paint-order:stroke fill;stroke:#faf4e4;stroke-width:2.5px;stroke-linejoin:round}
+
+/* Centered shelf labels; quiet slate before restoration, vivid jade after. */
+#book-grid .book{position:relative;isolation:isolate;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;padding:36px 30px;min-height:160px}
+#book-grid .book::before{content:"";position:absolute;inset:0;z-index:-1;background:url("assets/button.png") center/100% 100% no-repeat;pointer-events:none}
+#book-grid .book.is-unrestored::before{filter:saturate(.12) brightness(.78)}
+#book-grid .book.is-restored::before{filter:saturate(1.15) brightness(1.12)}
+#book-grid .book strong{font-size:20px;line-height:1.35;color:#fff8df}
+#book-grid .book small{margin:0;line-height:1.45;color:#e5e5d5}
+#book-grid .book .earned{color:#ffe49a;min-height:19px;font-size:15px}
+.shelf-legend{display:flex;justify-content:center;gap:18px;font:14px var(--body);margin:12px 0}
+.shelf-legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.before-key::before{background:#8a9b9d}.after-key::before{background:#60d6b5}
+.card-text{color:#102d2c!important;font-weight:600;line-height:1.85}
+.inline-math{color:inherit;white-space:normal}.inline-math .katex{font-size:1.08em;white-space:normal;text-rendering:optimizeLegibility}
+.card-text .katex{color:#0b2625}
+.card-text .katex .base{margin-top:2px;margin-bottom:2px}
+#proof-board .card{padding-top:20px;padding-bottom:20px}
+@media(max-width:650px){#book-grid .book{padding:34px 22px;min-height:168px}#book-grid .book strong{font-size:18px}#proof-board .card-text{font-size:15px;line-height:1.85}#proof-board .card{padding:18px 11px 25px}.tutorial-active #proof-board .card-text{font-size:14px}.inline-math .katex{font-size:1em}}
+
+/* Nine-slice frame: parchment grows with long formula cards without stretching its safe text area. */
+#proof-board .card{background:none;isolation:isolate;padding:25px 23px}
+#proof-board .card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border:20px solid transparent;border-image:url("assets/card.png") 160 220 160 220 fill / 25px 20px / 0 stretch}
+@media(max-width:650px){#proof-board .card{padding:26px 12px 30px}#proof-board .card::before{border-image-width:24px 11px}#book-grid .book{padding:44px 18px;min-height:190px}#book-grid .book strong{font-size:17px}.tutorial-active #proof-board .card{padding:24px 11px}}
+
+#proof-board .card-text{word-break:keep-all;overflow-wrap:anywhere}

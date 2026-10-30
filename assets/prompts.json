@@ -1,0 +1,25 @@
+{
+  "tool": "image_gen.imagegen",
+  "assets": [
+    {
+      "file": "assets/background.png",
+      "prompt": "Use case: stylized-concept. Asset: widescreen background for a premium Korean middle-school mathematical proof card puzzle called Logic Link. An enchanted library suspended between three floating islands, warm parchment, deep midnight teal, antique brass, quiet blue-green magical pathways connecting shelves, luminous books, tasteful painterly fantasy mobile game art. Wide landscape 1536x1024. Mostly calm dark teal open central 65% suitable for readable cards overlaid by code, intricate shelves and archways around edges. No text, no letters, no numbers, no UI."
+    },
+    {
+      "file": "assets/card.png",
+      "prompt": "Use case: stylized-concept. Asset: reusable horizontal draggable proof-card tile for the same enchanted library game. One front-facing wide horizontal rectangular ivory parchment card in a slim antique bronze frame, tiny teal crystal corner fasteners, warm tactile paper grain, extremely spacious blank center for 2 lines of text rendered by code. Premium painted fantasy board game UI asset, straight-on, rounded corners, no perspective. Aspect 3:1. No text, no letters, no icons in center. Transparent outside frame."
+    },
+    {
+      "file": "assets/button.png",
+      "prompt": "Use case: stylized-concept. Asset: one premium horizontal action button for enchanted library mobile puzzle, polished dark teal enamel plaque in a sculpted antique brass frame with small leaf-like corners and luminous warm edge. Front-facing, wide 3:1 proportions, uncluttered blank center for Korean label to be added by code. High-quality hand-painted game UI matching ivory parchment cards, no text, no letters, no numbers. Transparent outside the object."
+    },
+    {
+      "file": "assets/guide.png",
+      "prompt": "Use case: stylized-concept. Asset: friendly tiny fox librarian character for enchanted proof library game, cream fur with teal tail tip, round brass spectacles, holding a small closed ivory book with a softly glowing key clasp, kind thoughtful expression, appealing to middle school students, elegant hand-painted fantasy game illustration, full body centered with all extremities visible, no text. Transparent background."
+    },
+    {
+      "file": "assets/reward.png",
+      "prompt": "Use case: stylized-concept. Asset: collectible round bookmark medallion for enchanted proof library puzzle and round selection. One antique brass circular seal with a glowing turquoise open-book emblem, subtle tiny star sparks, ivory enamel inset, premium painterly tactile board-game piece, straight-on view, clearly recognizable at 48px. No text, no letters, no digits. Transparent background."
+    }
+  ]
+}

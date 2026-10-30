@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-30T05:08:58.689Z",
+  "sourceHash": "3521de6c32e52abf7dbe08e1cd4871002495e26c3120cbc42f31e4dc89b8f39e",
+  "screenshots": [
+    "evidence/logic-desktop.png",
+    "evidence/logic-mobile.png",
+    "evidence/logic-mobile-tutorial.png",
+    "evidence/logic-ending.png",
+    "evidence/logic-assessment-mobile.png"
+  ],
+  "campaign": {
+    "roundsPlayed": 56,
+    "allWon": true,
+    "collection": true,
+    "ending": true,
+    "wrongDependency": true,
+    "threeFailures": true,
+    "retry": true,
+    "hint": true,
+    "multipleOrders": true,
+    "mouseDrag": true,
+    "keyboard": true,
+    "saveRestore": true
+  },
+  "tutorial": {
+    "desktop": true,
+    "mobile": true,
+    "actualSuccess": true,
+    "skip": true,
+    "replay": true,
+    "isolated": true
+  },
+  "assessment": {
+    "independent": true,
+    "hint": true,
+    "retry": true,
+    "persistence": true,
+    "report": true,
+    "export": true,
+    "mobile": true,
+    "codes": [
+      "9수03-09",
+      "9수03-10",
+      "9수03-11",
+      "9수03-15",
+      "9수03-18",
+      "9수03-19"
+    ],
+    "tasksPlayed": 12,
+    "emptyExplanationRejected": true,
+    "newLearner": true
+  },
+  "typography": {
+    "status": "passed",
+    "mobileWidth": 390,
+    "overflow": false
+  },
+  "consoleErrors": [],
+  "audio": "Controls and WebAudio init work; background browser analyser signal unverified. No audible-output claim."
+}

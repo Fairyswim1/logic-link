@@ -1,0 +1,400 @@
+TAP version 13
+# Subtest: book-01 solvable, dependencies resolve, extras rejected
+ok 1 - book-01 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 2.7255
+  ...
+# Subtest: book-02 solvable, dependencies resolve, extras rejected
+ok 2 - book-02 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2833
+  ...
+# Subtest: book-03 solvable, dependencies resolve, extras rejected
+ok 3 - book-03 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2788
+  ...
+# Subtest: book-04 solvable, dependencies resolve, extras rejected
+ok 4 - book-04 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2357
+  ...
+# Subtest: book-05 solvable, dependencies resolve, extras rejected
+ok 5 - book-05 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.7598
+  ...
+# Subtest: book-06 solvable, dependencies resolve, extras rejected
+ok 6 - book-06 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1332
+  ...
+# Subtest: book-07 solvable, dependencies resolve, extras rejected
+ok 7 - book-07 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2048
+  ...
+# Subtest: book-08 solvable, dependencies resolve, extras rejected
+ok 8 - book-08 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1189
+  ...
+# Subtest: book-09 solvable, dependencies resolve, extras rejected
+ok 9 - book-09 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.3823
+  ...
+# Subtest: book-10 solvable, dependencies resolve, extras rejected
+ok 10 - book-10 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.4155
+  ...
+# Subtest: book-11 solvable, dependencies resolve, extras rejected
+ok 11 - book-11 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.177
+  ...
+# Subtest: book-12 solvable, dependencies resolve, extras rejected
+ok 12 - book-12 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.107
+  ...
+# Subtest: book-13 solvable, dependencies resolve, extras rejected
+ok 13 - book-13 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0879
+  ...
+# Subtest: book-14 solvable, dependencies resolve, extras rejected
+ok 14 - book-14 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1048
+  ...
+# Subtest: book-15 solvable, dependencies resolve, extras rejected
+ok 15 - book-15 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.084
+  ...
+# Subtest: book-16 solvable, dependencies resolve, extras rejected
+ok 16 - book-16 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0778
+  ...
+# Subtest: book-17 solvable, dependencies resolve, extras rejected
+ok 17 - book-17 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0803
+  ...
+# Subtest: book-18 solvable, dependencies resolve, extras rejected
+ok 18 - book-18 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0722
+  ...
+# Subtest: book-19 solvable, dependencies resolve, extras rejected
+ok 19 - book-19 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0799
+  ...
+# Subtest: book-20 solvable, dependencies resolve, extras rejected
+ok 20 - book-20 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.071
+  ...
+# Subtest: book-21 solvable, dependencies resolve, extras rejected
+ok 21 - book-21 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0711
+  ...
+# Subtest: book-22 solvable, dependencies resolve, extras rejected
+ok 22 - book-22 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0955
+  ...
+# Subtest: book-23 solvable, dependencies resolve, extras rejected
+ok 23 - book-23 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0966
+  ...
+# Subtest: book-24 solvable, dependencies resolve, extras rejected
+ok 24 - book-24 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.087
+  ...
+# Subtest: book-25 solvable, dependencies resolve, extras rejected
+ok 25 - book-25 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0778
+  ...
+# Subtest: book-26 solvable, dependencies resolve, extras rejected
+ok 26 - book-26 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0839
+  ...
+# Subtest: book-27 solvable, dependencies resolve, extras rejected
+ok 27 - book-27 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0957
+  ...
+# Subtest: book-28 solvable, dependencies resolve, extras rejected
+ok 28 - book-28 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0989
+  ...
+# Subtest: book-29 solvable, dependencies resolve, extras rejected
+ok 29 - book-29 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0809
+  ...
+# Subtest: book-30 solvable, dependencies resolve, extras rejected
+ok 30 - book-30 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0832
+  ...
+# Subtest: book-31 solvable, dependencies resolve, extras rejected
+ok 31 - book-31 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0873
+  ...
+# Subtest: book-32 solvable, dependencies resolve, extras rejected
+ok 32 - book-32 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1045
+  ...
+# Subtest: book-33 solvable, dependencies resolve, extras rejected
+ok 33 - book-33 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0931
+  ...
+# Subtest: book-34 solvable, dependencies resolve, extras rejected
+ok 34 - book-34 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1002
+  ...
+# Subtest: book-35 solvable, dependencies resolve, extras rejected
+ok 35 - book-35 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1
+  ...
+# Subtest: book-36 solvable, dependencies resolve, extras rejected
+ok 36 - book-36 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0807
+  ...
+# Subtest: book-37 solvable, dependencies resolve, extras rejected
+ok 37 - book-37 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.09
+  ...
+# Subtest: book-38 solvable, dependencies resolve, extras rejected
+ok 38 - book-38 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0953
+  ...
+# Subtest: book-39 solvable, dependencies resolve, extras rejected
+ok 39 - book-39 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1246
+  ...
+# Subtest: book-40 solvable, dependencies resolve, extras rejected
+ok 40 - book-40 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0754
+  ...
+# Subtest: book-41 solvable, dependencies resolve, extras rejected
+ok 41 - book-41 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0727
+  ...
+# Subtest: book-42 solvable, dependencies resolve, extras rejected
+ok 42 - book-42 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.5466
+  ...
+# Subtest: book-43 solvable, dependencies resolve, extras rejected
+ok 43 - book-43 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0864
+  ...
+# Subtest: book-44 solvable, dependencies resolve, extras rejected
+ok 44 - book-44 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0808
+  ...
+# Subtest: book-45 solvable, dependencies resolve, extras rejected
+ok 45 - book-45 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0812
+  ...
+# Subtest: book-46 solvable, dependencies resolve, extras rejected
+ok 46 - book-46 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0733
+  ...
+# Subtest: book-47 solvable, dependencies resolve, extras rejected
+ok 47 - book-47 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0834
+  ...
+# Subtest: book-48 solvable, dependencies resolve, extras rejected
+ok 48 - book-48 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0747
+  ...
+# Subtest: book-49 solvable, dependencies resolve, extras rejected
+ok 49 - book-49 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0815
+  ...
+# Subtest: book-50 solvable, dependencies resolve, extras rejected
+ok 50 - book-50 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0829
+  ...
+# Subtest: book-51 solvable, dependencies resolve, extras rejected
+ok 51 - book-51 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0719
+  ...
+# Subtest: book-52 solvable, dependencies resolve, extras rejected
+ok 52 - book-52 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.079
+  ...
+# Subtest: book-53 solvable, dependencies resolve, extras rejected
+ok 53 - book-53 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0773
+  ...
+# Subtest: book-54 solvable, dependencies resolve, extras rejected
+ok 54 - book-54 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0702
+  ...
+# Subtest: book-55 solvable, dependencies resolve, extras rejected
+ok 55 - book-55 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0699
+  ...
+# Subtest: book-56 solvable, dependencies resolve, extras rejected
+ok 56 - book-56 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0709
+  ...
+# Subtest: note-1 solvable, dependencies resolve, extras rejected
+ok 57 - note-1 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0866
+  ...
+# Subtest: note-2 solvable, dependencies resolve, extras rejected
+ok 58 - note-2 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0726
+  ...
+# Subtest: note-3 solvable, dependencies resolve, extras rejected
+ok 59 - note-3 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.077
+  ...
+# Subtest: note-4 solvable, dependencies resolve, extras rejected
+ok 60 - note-4 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0898
+  ...
+# Subtest: note-5 solvable, dependencies resolve, extras rejected
+ok 61 - note-5 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1061
+  ...
+# Subtest: note-6 solvable, dependencies resolve, extras rejected
+ok 62 - note-6 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0976
+  ...
+# Subtest: note-7 solvable, dependencies resolve, extras rejected
+ok 63 - note-7 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0741
+  ...
+# Subtest: note-8 solvable, dependencies resolve, extras rejected
+ok 64 - note-8 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0731
+  ...
+# Subtest: note-9 solvable, dependencies resolve, extras rejected
+ok 65 - note-9 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0803
+  ...
+# Subtest: note-10 solvable, dependencies resolve, extras rejected
+ok 66 - note-10 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1024
+  ...
+# Subtest: note-11 solvable, dependencies resolve, extras rejected
+ok 67 - note-11 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0728
+  ...
+# Subtest: note-12 solvable, dependencies resolve, extras rejected
+ok 68 - note-12 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0772
+  ...
+# Subtest: practice solvable, dependencies resolve, extras rejected
+ok 69 - practice solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.082
+  ...
+# Subtest: Independent premises accept a genuinely different order
+ok 70 - Independent premises accept a genuinely different order
+  ---
+  duration_ms: 0.7289
+  ...
+# Subtest: Early use-every-card strategy fails on later circular proof
+ok 71 - Early use-every-card strategy fails on later circular proof
+  ---
+  duration_ms: 0.1932
+  ...
+# Subtest: Three checks have a cost; retry and hint rewards differ
+ok 72 - Three checks have a cost; retry and hint rewards differ
+  ---
+  duration_ms: 0.1592
+  ...
+# Subtest: Move preserves each card once, supports inserting and returning
+ok 73 - Move preserves each card once, supports inserting and returning
+  ---
+  duration_ms: 0.1948
+  ...
+# Subtest: Independent assessment never counts retry, hint, or duplicate tasks
+ok 74 - Independent assessment never counts retry, hint, or duplicate tasks
+  ---
+  duration_ms: 2.352
+  ...
+# Subtest: Tutorial storage stays independent of progress and notes
+ok 75 - Tutorial storage stays independent of progress and notes
+  ---
+  duration_ms: 0.5099
+  ...
+# Subtest: Numerical answers independently checked
+ok 76 - Numerical answers independently checked
+  ---
+  duration_ms: 0.166
+  ...
+# Subtest: Isosceles and tangent proof facts checked by coordinates
+ok 77 - Isosceles and tangent proof facts checked by coordinates
+  ---
+  duration_ms: 0.1897
+  ...
+# Subtest: Coverage and generated assets are standalone
+ok 78 - Coverage and generated assets are standalone
+  ---
+  duration_ms: 6.1387
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 78
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 151.6416

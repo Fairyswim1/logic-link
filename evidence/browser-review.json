@@ -1,35 +1,42 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T05:13:51.950Z",
-  "sourceHash": "7d2c6726e45d7143fbbfad355928394f30065f22c7cab625c88af43de1151f72",
+  "checkedAt": "2026-10-30T05:54:00.095Z",
+  "sourceHash": "947bdc5edac38e7fe336a626d920ed2f66588693e3458144878c4df4460eea56",
   "screenshots": [
-    "evidence/logic-desktop.png",
-    "evidence/logic-mobile.png",
-    "evidence/logic-mobile-tutorial.png",
-    "evidence/logic-ending.png",
-    "evidence/logic-assessment-mobile.png"
+    "evidence/proof-desktop-v2.png",
+    "evidence/proof-intro-mobile-v2.png",
+    "evidence/proof-success-mobile-v2.png",
+    "evidence/proof-notes-mobile-v2.png"
   ],
   "campaign": {
-    "roundsPlayed": 64,
+    "roundsPlayed": 34,
     "allWon": true,
+    "sections": {
+      "proof": 30,
+      "construction": 4
+    },
     "collection": true,
     "ending": true,
     "wrongDependency": true,
-    "threeFailures": true,
     "retry": true,
-    "hint": true,
     "multipleOrders": true,
     "mouseDrag": true,
     "keyboard": true,
-    "saveRestore": true
+    "saveRestore": true,
+    "wholeCardDrag": true,
+    "crossList": true,
+    "insertion": true,
+    "cancel": true,
+    "retiredExercisesAbsent": true,
+    "notes": "Keyboard automation at high speed needed placement correction on book-15/34; both subsequently completed through actual UI. All 34 finally won."
   },
   "tutorial": {
-    "desktop": true,
     "mobile": true,
     "actualSuccess": true,
     "skip": true,
     "replay": true,
-    "isolated": true
+    "isolated": true,
+    "firstStepDiagram": true
   },
   "assessment": {
     "independent": true,
@@ -47,9 +54,9 @@
       "9수03-18",
       "9수03-19"
     ],
-    "tasksPlayed": 12,
-    "emptyExplanationRejected": true,
-    "newLearner": true
+    "tasksPlayed": 2,
+    "tasksAutomated": 12,
+    "note": "Actual new proof submissions, wrong first answer/hint/retry tracked; six domain report visible; export downloaded and feedback saved. All 12 dependency graphs automated."
   },
   "typography": {
     "status": "passed",
@@ -57,5 +64,5 @@
     "overflow": false
   },
   "consoleErrors": [],
-  "audio": "Controls and WebAudio init work; background browser analyser signal unverified. No audible-output claim."
+  "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available."
 }

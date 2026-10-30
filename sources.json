@@ -19,76 +19,6 @@
   },
   "references": [
     {
-      "document": "미래엔_중학교수학1_교과서_1-2_소인수분해.pdf",
-      "sha256": "2a79c863a2fe8a0ff2e57346dd9c0839a1fc82a3b8bb84f21b92409ceffe9ad0",
-      "pdfPage": 2,
-      "topic": "소인수분해",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_1-3_최대공약수와최소공배수.pdf",
-      "sha256": "0a8b899c7444adccd6c75ceaa985400b9e8031cd1064c38a15e7a69efbebf0aa",
-      "pdfPage": 2,
-      "topic": "최대공약수",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_1-3_최대공약수와최소공배수.pdf",
-      "sha256": "0a8b899c7444adccd6c75ceaa985400b9e8031cd1064c38a15e7a69efbebf0aa",
-      "pdfPage": 4,
-      "topic": "최소공배수",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_2-4_정수와유리수의뺄셈.pdf",
-      "sha256": "3345a4712e9ec7b7ab258761ece4fd4ef4af3fb2fd389b779182c6b7543713f3",
-      "pdfPage": 2,
-      "topic": "정수와 유리수",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_2-6_정수와유리수의나눗셈.pdf",
-      "sha256": "c38251a9a32c11f7b95e8838f7becd3d6bcb4e73a90733889b4229344e547f25",
-      "pdfPage": 3,
-      "topic": "정수와 유리수",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_3-1_문자의사용과식의값.pdf",
-      "sha256": "cdb9a89713bbdf7c2784283d90237c547bc8a91db28808685f56cc2736cb9085",
-      "pdfPage": 7,
-      "topic": "문자와 식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_3-3_일차식의덧셈과뺄셈.pdf",
-      "sha256": "67ae2b2056a1dccc9118ea9e5f880ca7763227d9e416b715507dd6ae2c55b28d",
-      "pdfPage": 2,
-      "topic": "일차식 계산",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_3-5_일차방정식의풀이.pdf",
-      "sha256": "b2f35d6feb8a66e27984b0d0734f720a0437c61fed9af44670392d366f232253",
-      "pdfPage": 2,
-      "topic": "일차방정식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_3-5_일차방정식의풀이.pdf",
-      "sha256": "b2f35d6feb8a66e27984b0d0734f720a0437c61fed9af44670392d366f232253",
-      "pdfPage": 4,
-      "topic": "일차방정식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학1_교과서_4-1_순서쌍과좌표.pdf",
-      "sha256": "191ec42e7c4854a6fe81070a5387bd0d78b326f8c133c2eac687631ef2fb71a7",
-      "pdfPage": 5,
-      "topic": "좌표",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
       "document": "미래엔_중학교수학1_교과서_5-5_간단한도형의작도.pdf",
       "sha256": "2f0e49c6662601f46d60e746111ea2af8fbfdb471995eb945f297e8a63d16acd",
       "pdfPage": 2,
@@ -138,13 +68,6 @@
       "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
     },
     {
-      "document": "미래엔_중학교수학1_교과서_8-1_대푯값.pdf",
-      "sha256": "a4eeec75c8c42c110540b54cd4e7926965f692c2f04f5cdc0690cec562866c2d",
-      "pdfPage": 2,
-      "topic": "대푯값",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
       "document": "미래엔_중학교수학1_교과서_5-6_삼각형의작도.pdf",
       "sha256": "fd39356f8ecfda85386d645649670ba3a69d9464b51e4103a12cbd39b013f1d5",
       "pdfPage": 4,
@@ -166,34 +89,6 @@
       "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
     },
     {
-      "document": "미래엔_중학교수학2_교과서_1-3_순환소수의분수표현.pdf",
-      "sha256": "6434ed3a571ee80d7bf8ac8c823b4fb7ba21b93795fbd7ce26cc9771d8da1d62",
-      "pdfPage": 2,
-      "topic": "순환소수",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_2-1_지수법칙1.pdf",
-      "sha256": "bf3cab94f8b06382d669bbd824c9d01f8993e5e4750d14f9d826d687bd13d725",
-      "pdfPage": 2,
-      "topic": "지수법칙",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_3-3_일차부등식의풀이.pdf",
-      "sha256": "d5258bc1c001d54f76ad481d5da0a920f4339bbcb3718dc178d6867273354b8d",
-      "pdfPage": 2,
-      "topic": "일차부등식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_4-2_연립일차방정식의풀이.pdf",
-      "sha256": "c4c9c978194d2a046272ba6460042be981b92781095508aad316a5f3b0919d48",
-      "pdfPage": 3,
-      "topic": "연립방정식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
       "document": "미래엔_중학교수학2_교과서_6-1_이등변삼각형의성질.pdf",
       "sha256": "31fd725c381cf63250cc37dce398390526622494c7ba40ac82e954dd6dad7a89",
       "pdfPage": 4,
@@ -203,22 +98,8 @@
     {
       "document": "미래엔_중학교수학2_교과서_6-1_이등변삼각형의성질.pdf",
       "sha256": "31fd725c381cf63250cc37dce398390526622494c7ba40ac82e954dd6dad7a89",
-      "pdfPage": 5,
-      "topic": "이등변삼각형",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_6-1_이등변삼각형의성질.pdf",
-      "sha256": "31fd725c381cf63250cc37dce398390526622494c7ba40ac82e954dd6dad7a89",
       "pdfPage": 6,
       "topic": "이등변삼각형의 역",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_6-2_직각삼각형의합동조건.pdf",
-      "sha256": "dafae6ec51ced076aa39b21bbb0dd0f00b1f7655af801a8738a47b58249f3ed8",
-      "pdfPage": 2,
-      "topic": "직각삼각형 합동",
       "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
     },
     {
@@ -285,13 +166,6 @@
       "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
     },
     {
-      "document": "미래엔_중학교수학2_교과서_7-2_삼각형의닮음조건.pdf",
-      "sha256": "7b8e2337ce2fa7d347d145f5719ec9045c080e83241c6809b8b3296b9c9ba80c",
-      "pdfPage": 2,
-      "topic": "삼각형 닮음",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
       "document": "미래엔_중학교수학2_교과서_7-3_평행선사이의선분의길이의비.pdf",
       "sha256": "3518d637baedbd4a80548a0cd87e5d5eef601ee034f181b6a4472d4437288b9c",
       "pdfPage": 3,
@@ -303,76 +177,6 @@
       "sha256": "95a186df9f401055a2b2f41b03b84e17d36b90c172bf02d565eba15628fbaccf",
       "pdfPage": 2,
       "topic": "피타고라스 정리",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_7-5_피타고라스정리.pdf",
-      "sha256": "95a186df9f401055a2b2f41b03b84e17d36b90c172bf02d565eba15628fbaccf",
-      "pdfPage": 3,
-      "topic": "피타고라스 정리",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_7-4_삼각형의무게중심.pdf",
-      "sha256": "56a0c7836e2997ea2b05c177ba95a68930b2cdc33680539bb071babd8f5188c1",
-      "pdfPage": 1,
-      "topic": "삼각형의 무게중심",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_7-4_삼각형의무게중심.pdf",
-      "sha256": "56a0c7836e2997ea2b05c177ba95a68930b2cdc33680539bb071babd8f5188c1",
-      "pdfPage": 3,
-      "topic": "삼각형의 무게중심",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "미래엔_중학교수학2_교과서_7-5_피타고라스정리.pdf",
-      "sha256": "95a186df9f401055a2b2f41b03b84e17d36b90c172bf02d565eba15628fbaccf",
-      "pdfPage": 4,
-      "topic": "피타고라스 정리의 역",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_1_2_근호를_포함한_식의_계산.pdf",
-      "sha256": "49f862d3978e80f537aac9d199835dc4ee9ba8354509189a0030a56753825321",
-      "pdfPage": 8,
-      "topic": "근호 계산",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_2_1_다항식의_곱셈과_인수분해.pdf",
-      "sha256": "03658a13795b81dcce096ccc15b73e20d758d1d2b66b4752b4642673a72aca21",
-      "pdfPage": 5,
-      "topic": "다항식 곱셈",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_2_1_다항식의_곱셈과_인수분해.pdf",
-      "sha256": "03658a13795b81dcce096ccc15b73e20d758d1d2b66b4752b4642673a72aca21",
-      "pdfPage": 17,
-      "topic": "인수분해",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_2_2_이차방정식.pdf",
-      "sha256": "6f5b9761f3a2f4bb0bf78f0cf67d3ed3b48bcdd6669e4421e9d7e3e9a3d2b0cc",
-      "pdfPage": 4,
-      "topic": "이차방정식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_2_2_이차방정식.pdf",
-      "sha256": "6f5b9761f3a2f4bb0bf78f0cf67d3ed3b48bcdd6669e4421e9d7e3e9a3d2b0cc",
-      "pdfPage": 8,
-      "topic": "이차방정식",
-      "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
-    },
-    {
-      "document": "중_수학3_교과서PDF_4_2_삼각비의_활용.pdf",
-      "sha256": "d4fad3b8eb022f94ac80d22a65120e404ef83d2c463a9221c6d878166ab10015",
-      "pdfPage": 3,
-      "topic": "삼각비 활용",
       "adaptation": "직접 쓴 카드 설명과 새 수치·상황; 원문 미배포"
     },
     {
@@ -439,5 +243,6 @@
       "복잡한 삼각비 항등식",
       "모든 계산·통계 문항의 전수 수록"
     ]
-  }
+  },
+  "scope": "증명 30편과 별도 작도 섹션 4편. 계산·방정식 풀이·좌표 표시·자료 정리 절차는 제거."
 }

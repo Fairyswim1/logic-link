@@ -1,6 +1,6 @@
 {
   "game": "logic-link",
-  "version": "2026.10.30.1",
+  "version": "2026.10.30.2",
   "source": {
     "title": "교육부 고시 제2022-33호 [별책8] 수학과 교육과정",
     "sha256": "a11706f7c7a8e0aa650a4d08549895ff10f7920b1bee7b2c2f4ce79ad3795ac8",
@@ -94,388 +94,242 @@
   "rule": "각 기준의 서로 다른 과제 두 개에서 도움 없는 첫 제출 성공만 순서 확인됨으로 표시. 설명 및 전체 기준 이수는 자동 판정하지 않음.",
   "practiceCoverage": [
     {
-      "id": "book-01",
-      "code": "9수01-01",
-      "scope": "소인수분해",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-02",
-      "code": "9수01-02",
-      "scope": "최대공약수",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-03",
-      "code": "9수01-02",
-      "scope": "최소공배수",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-04",
-      "code": "9수01-05",
-      "scope": "정수와 유리수",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-05",
-      "code": "9수01-05",
-      "scope": "정수와 유리수",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-06",
-      "code": "9수02-01",
-      "scope": "문자와 식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-07",
-      "code": "9수02-02",
-      "scope": "일차식 계산",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-08",
-      "code": "9수02-04",
-      "scope": "일차방정식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-09",
-      "code": "9수02-04",
-      "scope": "일차방정식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-10",
-      "code": "9수02-05",
-      "scope": "좌표",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-11",
-      "code": "9수03-03",
-      "scope": "기본 작도",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-12",
-      "code": "9수03-03",
-      "scope": "삼각형 작도",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-13",
-      "code": "9수03-03",
-      "scope": "삼각형 작도",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
       "id": "book-14",
       "code": "9수03-01",
       "scope": "기본 도형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-15",
       "code": "9수03-05",
       "scope": "삼각형의 각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-16",
       "code": "9수03-05",
       "scope": "삼각형의 외각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-17",
       "code": "9수03-05",
       "scope": "다각형의 각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-18",
-      "code": "9수04-01",
-      "scope": "대푯값",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-57",
-      "code": "9수03-03",
-      "scope": "삼각형 작도",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-58",
       "code": "9수03-05",
       "scope": "다각형의 각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-59",
       "code": "9수03-02",
       "scope": "평행선의 성질",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-19",
-      "code": "9수01-06",
-      "scope": "순환소수",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-20",
-      "code": "9수02-08",
-      "scope": "지수법칙",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-21",
-      "code": "9수02-12",
-      "scope": "일차부등식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-22",
-      "code": "9수02-13",
-      "scope": "연립방정식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-23",
       "code": "9수03-09",
       "scope": "이등변삼각형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-24",
-      "code": "9수03-09",
-      "scope": "이등변삼각형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-25",
-      "code": "9수03-09",
-      "scope": "이등변삼각형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-26",
       "code": "9수03-09",
       "scope": "이등변삼각형의 역",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-27",
-      "code": "9수03-04",
-      "scope": "직각삼각형 합동",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-28",
       "code": "9수03-10",
       "scope": "외심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-29",
       "code": "9수03-10",
       "scope": "외심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-30",
       "code": "9수03-10",
       "scope": "내심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-31",
       "code": "9수03-10",
       "scope": "내심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-32",
       "code": "9수03-11",
       "scope": "평행사변형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-33",
       "code": "9수03-11",
       "scope": "평행사변형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-34",
       "code": "9수03-11",
       "scope": "평행사변형 조건",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-35",
       "code": "9수03-11",
       "scope": "직사각형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-36",
       "code": "9수03-11",
       "scope": "마름모",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-37",
-      "code": "9수03-13",
-      "scope": "삼각형 닮음",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-38",
       "code": "9수03-14",
       "scope": "평행선과 길이의 비",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-39",
       "code": "9수03-15",
       "scope": "피타고라스 정리",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-40",
-      "code": "9수03-15",
-      "scope": "피타고라스 정리",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-60",
-      "code": "9수03-14",
-      "scope": "삼각형의 무게중심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-61",
-      "code": "9수03-14",
-      "scope": "삼각형의 무게중심",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-62",
-      "code": "9수03-15",
-      "scope": "피타고라스 정리의 역",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-41",
-      "code": "9수01-10",
-      "scope": "근호 계산",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-42",
-      "code": "9수02-19",
-      "scope": "다항식 곱셈",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-43",
-      "code": "9수02-19",
-      "scope": "인수분해",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-44",
-      "code": "9수02-20",
-      "scope": "이차방정식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-45",
-      "code": "9수02-20",
-      "scope": "이차방정식",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-46",
-      "code": "9수03-17",
-      "scope": "삼각비 활용",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-47",
       "code": "9수03-18",
       "scope": "원의 현",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
-    },
-    {
-      "id": "book-48",
-      "code": "9수03-18",
-      "scope": "원의 현",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-49",
       "code": "9수03-18",
       "scope": "원의 현",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-50",
       "code": "9수03-18",
       "scope": "원의 접선",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-51",
       "code": "9수03-19",
       "scope": "원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-52",
       "code": "9수03-19",
       "scope": "원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-53",
       "code": "9수03-19",
       "scope": "원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-54",
       "code": "9수03-19",
       "scope": "원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-55",
       "code": "9수03-19",
       "scope": "원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-56",
       "code": "9수03-19",
       "scope": "원에 내접하는 사각형",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-63",
       "code": "9수03-18",
       "scope": "원의 현",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     },
     {
       "id": "book-64",
       "code": "9수03-19",
       "scope": "접선과 원주각",
-      "observation": "연습 기록; 독립 평가로 합산하지 않음"
+      "kind": "proof",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
+    },
+    {
+      "id": "book-11",
+      "code": "9수03-03",
+      "scope": "기본 작도",
+      "kind": "construction",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
+    },
+    {
+      "id": "book-12",
+      "code": "9수03-03",
+      "scope": "삼각형 작도",
+      "kind": "construction",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
+    },
+    {
+      "id": "book-13",
+      "code": "9수03-03",
+      "scope": "삼각형 작도",
+      "kind": "construction",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
+    },
+    {
+      "id": "book-57",
+      "code": "9수03-03",
+      "scope": "삼각형 작도",
+      "kind": "construction",
+      "observation": "연습 기록; 독립 확인으로 합산하지 않음"
     }
   ]
 }

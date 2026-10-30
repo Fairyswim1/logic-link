@@ -2,7 +2,7 @@
   "id": "logic-link",
   "title": "로직 링크",
   "subtitle": "생각을 잇는 서고",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "grade": 2,
   "grades": [
     1,
@@ -10,20 +10,20 @@
     3
   ],
   "gradeUnits": {
-    "1": "계산·작도·설명 순서",
-    "2": "삼각형·사각형의 증명",
-    "3": "원의 성질·식의 풀이"
+    "1": "각·다각형의 증명 / 자와 컴퍼스 작도",
+    "2": "삼각형·사각형·피타고라스 정리의 증명",
+    "3": "현·접선·원주각의 성질 증명"
   },
-  "unit": "증명과 풀이 순서",
+  "unit": "증명과 작도",
   "status": "playable",
-  "description": "흩어진 설명 카드를 골라 근거가 이어지도록 놓으세요. 중1~중3의 계산·작도·도형 증명 64권을 복원하며 세 서가의 책갈피를 모으는 순서 퍼즐입니다.",
+  "description": "근거 카드를 끌어 놓아 논리의 흐름을 완성하세요. 증명 30편과 작도 4편을 별도 서가에서 골라, 이유를 잇거나 자와 컴퍼스를 사용하는 순서를 맞춥니다.",
   "category": "증명과 풀이",
   "tags": [
     "증명",
-    "순서 퍼즐",
-    "중1~중3"
+    "작도",
+    "드래그앤드롭"
   ],
-  "duration": "한 권 3~7분",
+  "duration": "증명 한 편씩",
   "assets": [
     "assets/background.png",
     "assets/card.png",
@@ -40,7 +40,7 @@
     "roundNavigation": "assets/reward.png"
   },
   "tutorial": {
-    "version": 1,
+    "version": 2,
     "firstVisit": true,
     "spotlight": true,
     "steps": 5,
@@ -49,11 +49,12 @@
     "practiceProgress": "isolated-memory"
   },
   "campaign": {
-    "rounds": 64,
+    "rounds": 34,
     "chapters": 3,
     "collectibles": 3,
     "ending": true
   },
   "repository": "https://github.com/Fairyswim1/logic-link",
-  "repositoryStatus": "created"
+  "repositoryStatus": "created",
+  "rounds": 34
 }

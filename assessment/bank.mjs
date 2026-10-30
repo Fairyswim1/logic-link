@@ -1,16 +1,498 @@
-
-export const tasks=[];
-function T(code,title,problem,steps,bad){const id='note-'+(tasks.length+1);tasks.push({id,code,title,problem,cards:steps.map((s,i)=>({id:'c'+i,text:Array.isArray(s)?s[0]:s,requires:(Array.isArray(s)?s[1]:(i?[i-1]:[])).map(n=>'c'+n),valid:true})).concat(bad?[{id:'x0',text:bad[0],reason:bad[1],valid:false,requires:[]}]:[])});}
-T('9수03-09','접힌 깃발의 두 각','AB=AC인 깃발에서 꼭지각 A가 44°입니다. 두 밑각을 구하는 근거를 이으세요.',['이등변삼각형의 두 밑각 B,C는 같다.','세 내각의 합이 180°이므로 B+C=136°이다.','같은 두 각의 합이 136°이므로 B=C=68°이다.'],['B와 C는 각각 44°이다.','같은 것은 꼭지각과 밑각이 아니라 두 밑각이에요.']);
-T('9수03-09','끝에서 같은 각을 본다면','△RST에서 ∠S=∠T=52°이고 RS=9입니다. RT의 길이를 설명하세요.',['같은 두 각 S,T의 맞은편 변은 각각 RT,RS이다.','두 각이 같으므로 이등변삼각형의 성질의 역에 의해 RT=RS이다.','RS=9이므로 RT=9이다.'],['각이 같으면 모든 변의 길이가 같다.','두 각이 같다는 조건으로 세 변이 모두 같다고 할 수는 없어요.']);
-T('9수03-10','세 번째 수직이등분선','O는 △ABC의 AB, AC의 수직이등분선의 교점입니다. O가 BC의 수직이등분선에도 놓임을 설명하세요.',[['OA=OB이다.',[]],['OA=OC이다.',[]],['따라서 OB=OC이다.',[0,1]],['두 점 B,C에서 같은 거리에 있는 O는 BC의 수직이등분선 위에 있다.',[2]]],['외심은 세 변까지의 거리가 같다.','외심에서 같은 거리는 세 꼭짓점까지의 거리예요.']);
-T('9수03-10','내심에서 바라본 각','△ABC에서 ∠A=64°이고 I는 내심입니다. ∠BIC를 구하세요.',[['∠IBC=∠B/2, ∠ICB=∠C/2이다.',[]],['∠B+∠C=180°−64°=116°이다.',[]],['△IBC에서 ∠IBC+∠ICB=58°이다.',[0,1]],['따라서 ∠BIC=180°−58°=122°이다.',[2]]],['내심에서 바라보면 모든 각이 90°이다.','내심에서 만드는 각이 모두 직각인 것은 아니에요.']);
-T('9수03-11','같은 대각선을 가진 평행사변형','평행사변형 ABCD에서 AC=BD입니다. 직사각형임을 보이세요.',[['AB=DC이고 BC는 공통이며 AC=DB이다.',[]],['SSS로 △ABC≡△DCB이다.',[0]],['따라서 ∠ABC=∠DCB이다.',[1]],['평행사변형의 이웃한 두 각의 합은 180°이다.',[]],['같은 두 각은 90°이므로 이 평행사변형은 직사각형이다.',[2,3]]],['대각선이 같으면 모든 사각형은 직사각형이다.','평행사변형이라는 조건이 필요해요. 등변사다리꼴도 대각선이 같아요.']);
-T('9수03-11','수직으로 만나는 대각선','평행사변형 ABCD에서 AC⊥BD, 교점 O입니다. 마름모임을 보이세요.',[['BO=DO이고 AO는 공통이다.',[]],['∠AOB=∠AOD=90°이다.',[]],['SAS로 △AOB≡△AOD이므로 AB=AD이다.',[0,1]],['평행사변형의 대변은 같으므로 네 변이 모두 같다.',[2]],['따라서 ABCD는 마름모이다.',[3]]],['대각선이 수직이면 언제나 정사각형이다.','네 내각까지 직각이라고 할 수 없어요.']);
-T('9수03-15','직사각형의 대각선','가로가 8, 세로가 15인 직사각형의 대각선 d를 구하세요.',['대각선은 직각변 8,15인 직각삼각형의 빗변이다.','d²=8²+15²=64+225=289이다.','길이는 양수이므로 d=17이다.'],['d=8+15=23이다.','직각변의 제곱의 합이 빗변의 제곱이에요.']);
-T('9수03-15','사다리의 발이 있는 곳','길이 10인 사다리가 수직 벽에 닿은 높이는 6입니다. 바닥과 벽은 수직일 때 사다리 발과 벽 사이 거리 x를 구하세요.',['빗변은 사다리이므로 x²+6²=10²이다.','x²=100−36=64이다.','거리는 양수이므로 x=8이다.'],['x²=10²+6²이다.','10이 빗변이므로 10²에서 6²을 빼야 해요.']);
-T('9수03-18','접선의 길이와 반지름','원 O에 점 P에서 그은 접선의 접점을 A라 합니다. OP=13, OA=5일 때 PA를 구하세요.',['접점에서 반지름과 접선이 수직이므로 ∠OAP=90°이다.','빗변 OP=13이므로 PA²+5²=13²이다.','PA²=144이고 길이는 양수이므로 PA=12이다.'],['OP가 접선에 수직이므로 OP²+PA²=OA²이다.','접점 A로 향하는 반지름 OA가 접선에 수직이에요.']);
-T('9수03-18','원을 감싼 네 변','볼록 사각형 ABCD의 네 변이 한 원에 접합니다. AB+CD=BC+DA임을 설명하세요.',['각 꼭짓점에서 원에 그은 두 접선의 길이는 각각 같다.','A,B,C,D에서 생긴 같은 길이 쌍을 각각 a,b,c,d라 두면 AB=a+b, BC=b+c, CD=c+d, DA=d+a이다.','AB+CD=a+b+c+d, BC+DA=b+c+d+a이다.','더하는 순서를 바꾸면 같으므로 AB+CD=BC+DA이다.'],['네 변이 한 원에 접하면 네 변 길이는 모두 같다.','같은 것은 한 꼭짓점에서 그은 두 접선의 길이예요.']);
-T('9수03-19','호를 바라보는 창','호 AB의 중심각은 128°입니다. 그 호 위에 있지 않은 원 위의 점 P에서 ∠APB를 구하세요.',['∠APB는 주어진 호 AB에 대한 원주각이다.','원주각은 같은 호의 중심각의 절반이다.','∠APB=128°/2=64°이다.'],['원주각은 중심각의 두 배이므로 256°이다.','원주각은 중심각의 절반이에요.']);
-T('9수03-19','원 안의 마주 보는 각','원에 내접하는 사각형의 한 내각이 73°입니다. 마주 보는 내각 x를 구하는 이유를 이으세요.',['마주 보는 두 내각이 보는 호를 합치면 원 전체가 된다.','중심각의 합은 360°이므로 두 원주각의 합은 180°이다.','73°+x=180°이므로 x=107°이다.'],['마주 보는 각은 같으므로 x=73°이다.','원에 내접하는 일반 사각형의 대각의 합은 180°예요.']);
-export const labels={'9수03-09':'이등변삼각형','9수03-10':'외심과 내심','9수03-11':'사각형','9수03-15':'피타고라스 정리','9수03-18':'현과 접선','9수03-19':'원주각'};
+export const tasks=[
+  {
+    "id": "proof-note-1",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-09",
+    "title": "가운데로 그은 선",
+    "problem": "PQ=PR인 △PQR에서 M은 QR의 중점입니다. ∠Q=∠R임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "PQ=PR이고 QM=RM이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "PM은 공통변이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "SSS로 △PQM≡△PRM이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "대응각이므로 ∠PQM=∠PRM이다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-2",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-09",
+    "title": "반으로 나눈 꼭지각",
+    "problem": "XY=XZ인 △XYZ에서 XW는 꼭지각의 이등분선이고 W는 YZ 위입니다. XW⊥YZ임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "XY=XZ, ∠YXW=∠ZXW이고 XW는 공통변이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "SAS로 △XYW≡△XZW이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "대응각 ∠XWY=∠XWZ이다.",
+        "requires": [
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "두 각은 평각을 나누므로 합이 180°이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c4",
+        "text": "따라서 두 각은 각각 90°이므로 XW⊥YZ이다.",
+        "requires": [
+          "c2",
+          "c3"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-3",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-10",
+    "title": "세 번째 수직이등분선",
+    "problem": "O는 △ABC의 AB, AC의 수직이등분선의 교점입니다. O가 BC의 수직이등분선에도 놓임을 설명하세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "OA=OB이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "OA=OC이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "따라서 OB=OC이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "두 점 B,C에서 같은 거리에 있는 O는 BC의 수직이등분선 위에 있다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-4",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-10",
+    "title": "같은 거리의 중심",
+    "problem": "J는 △KLM의 두 내각 K,L의 이등분선 교점입니다. J에서 KL,LM,MK에 내린 수선의 발이 U,V,W일 때 J가 내심임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "K의 각을 이등분하므로 JU=JW이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "L의 각을 이등분하므로 JU=JV이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "따라서 JU=JV=JW이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "J 중심, JU 반지름인 원은 세 변에 접하므로 J가 내심이다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-5",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-11",
+    "title": "같은 대각선을 가진 평행사변형",
+    "problem": "평행사변형 ABCD에서 AC=BD입니다. 직사각형임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "AB=DC이고 BC는 공통이며 AC=DB이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "SSS로 △ABC≡△DCB이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "따라서 ∠ABC=∠DCB이다.",
+        "requires": [
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "평행사변형의 이웃한 두 각의 합은 180°이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c4",
+        "text": "같은 두 각은 90°이므로 이 평행사변형은 직사각형이다.",
+        "requires": [
+          "c2",
+          "c3"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-6",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-11",
+    "title": "수직으로 만나는 대각선",
+    "problem": "평행사변형 ABCD에서 AC⊥BD, 교점 O입니다. 마름모임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "BO=DO이고 AO는 공통이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "∠AOB=∠AOD=90°이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "SAS로 △AOB≡△AOD이므로 AB=AD이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "평행사변형의 대변은 같으므로 네 변이 모두 같다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c4",
+        "text": "따라서 ABCD는 마름모이다.",
+        "requires": [
+          "c3"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-7",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-15",
+    "title": "넓이로 연결하는 세 변",
+    "problem": "직각변 p,q와 빗변 r인 합동 삼각형 4개를 한 변 p+q인 정사각형 안에 둘러 놓았습니다. 가운데는 한 변 r인 정사각형입니다. p²+q²=r²을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "바깥 정사각형의 넓이는 (p+q)²이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "삼각형 넷의 넓이 합은 2pq이고 가운데 넓이는 r²이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "전체 넓이에서 (p+q)²=2pq+r²이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "전개한 뒤 2pq를 빼면 p²+q²=r²이다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-8",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-15",
+    "title": "높이로 나눈 두 삼각형",
+    "problem": "∠C=90°인 △ABC에서 C로부터 빗변 AB에 내린 수선의 발을 H라 합니다. 닮음을 이용해 AC²+BC²=AB²을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "공통인 예각과 직각으로 △ACH∽△ABC, △CBH∽△ABC이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "대응변의 비에서 AC²=AB×AH이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "대응변의 비에서 BC²=AB×BH이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "두 식을 더하면 AC²+BC²=AB×(AH+BH)이다.",
+        "requires": [
+          "c1",
+          "c2"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c4",
+        "text": "AH+BH=AB이므로 AC²+BC²=AB²이다.",
+        "requires": [
+          "c3"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-9",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-18",
+    "title": "같은 길이의 두 접선",
+    "problem": "점 T에서 원 O에 그은 두 접선의 접점은 U,V입니다. TU=TV임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "반지름 OU=OV이고 OT는 공통이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "반지름과 접선은 수직이므로 ∠OUT=∠OVT=90°이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "빗변과 한 변이 같아 △OUT≡△OVT이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "대응변이므로 TU=TV이다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-10",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-18",
+    "title": "원을 감싼 네 변",
+    "problem": "볼록 사각형 ABCD의 네 변이 한 원에 접합니다. AB+CD=BC+DA임을 설명하세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "각 꼭짓점에서 원에 그은 두 접선의 길이는 각각 같다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "A,B,C,D에서 생긴 같은 길이 쌍을 각각 a,b,c,d라 두면 AB=a+b, BC=b+c, CD=c+d, DA=d+a이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "AB+CD=a+b+c+d, BC+DA=b+c+d+a이다.",
+        "requires": [
+          "c1"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "더하는 순서를 바꾸면 같으므로 AB+CD=BC+DA이다.",
+        "requires": [
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-11",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-19",
+    "title": "한 호를 보는 두 자리",
+    "problem": "원 위의 U,V에서 ∠RUS와 ∠RVS가 같은 호 RS를 봅니다. 두 원주각이 같음을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "∠RUS는 호 RS에 대한 중심각의 절반이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "∠RVS도 같은 호 RS에 대한 중심각의 절반이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "같은 각의 절반이므로 ∠RUS=∠RVS이다.",
+        "requires": [
+          "c0",
+          "c1"
+        ],
+        "valid": true
+      }
+    ]
+  },
+  {
+    "id": "proof-note-12",
+    "version": "2",
+    "kind": "proof",
+    "code": "9수03-19",
+    "title": "마주 보는 각의 합",
+    "problem": "K,L,M,N이 원 위에 차례로 놓입니다. ∠KLM+∠KNM=180°임을 보이세요.",
+    "cards": [
+      {
+        "id": "c0",
+        "text": "두 각이 보는 호 KM은 서로 합쳐 원 전체를 이룬다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c1",
+        "text": "따라서 그 두 호에 대한 중심각의 합은 360°이다.",
+        "requires": [
+          "c0"
+        ],
+        "valid": true
+      },
+      {
+        "id": "c2",
+        "text": "각 원주각은 해당 중심각의 절반이다.",
+        "requires": [],
+        "valid": true
+      },
+      {
+        "id": "c3",
+        "text": "그러므로 두 원주각의 합은 360°의 절반인 180°이다.",
+        "requires": [
+          "c1",
+          "c2"
+        ],
+        "valid": true
+      }
+    ]
+  }
+];
+export const labels={"9수03-09":"이등변삼각형","9수03-10":"외심과 내심","9수03-11":"사각형","9수03-15":"피타고라스 정리","9수03-18":"현과 접선","9수03-19":"원주각"};

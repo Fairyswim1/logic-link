@@ -41,6 +41,6 @@ export function recordAttempt(log,task,order,{help=false,explanation='',at=new D
  const previous=log.filter(x=>x.taskId===task.id&&x.event==='submit');
  const assisted=help||log.some(x=>x.taskId===task.id&&x.event==='hint');
  const result=inspect(task,order);
- return [...log,{event:'submit',taskId:task.id,code:task.code,version:'1',at,first:previous.length===0,assisted,independent:previous.length===0&&!assisted,correct:result.ok,order:[...order],explanation,result:result.kind}];
+ return [...log,{event:'submit',taskId:task.id,code:task.code,version:task.version||'1',at,first:previous.length===0,assisted,independent:previous.length===0&&!assisted,correct:result.ok,order:[...order],explanation,result:result.kind}];
 }
 export function report(log,codes){return codes.map(code=>{const rows=log.filter(x=>x.code===code&&x.event==='submit');const ids=new Set(rows.filter(x=>x.correct&&x.independent).map(x=>x.taskId));return {code,independent:ids.size,status:ids.size>=2?'순서 확인됨':'더 도전해 보기',explanation:rows.some(x=>x.explanation.trim())?'설명 남김':'설명 아직 없음',attempts:rows.length};});}

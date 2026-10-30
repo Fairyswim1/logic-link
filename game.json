@@ -16,7 +16,7 @@
   },
   "unit": "증명과 풀이 순서",
   "status": "playable",
-  "description": "흩어진 설명 카드를 골라 근거가 이어지도록 놓으세요. 중1~중3의 계산·작도·도형 증명 56권을 복원하며 세 서가의 책갈피를 모으는 순서 퍼즐입니다.",
+  "description": "흩어진 설명 카드를 골라 근거가 이어지도록 놓으세요. 중1~중3의 계산·작도·도형 증명 64권을 복원하며 세 서가의 책갈피를 모으는 순서 퍼즐입니다.",
   "category": "증명과 풀이",
   "tags": [
     "증명",
@@ -49,7 +49,7 @@
     "practiceProgress": "isolated-memory"
   },
   "campaign": {
-    "rounds": 56,
+    "rounds": 64,
     "chapters": 3,
     "collectibles": 3,
     "ending": true

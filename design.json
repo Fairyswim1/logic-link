@@ -29,7 +29,7 @@
     "순서 바꾸기·빼기",
     "책 복원하기"
   ],
-  "rounds": 56,
+  "rounds": 64,
   "decisionProgression": [
     {
       "decision": "연산의 선후",

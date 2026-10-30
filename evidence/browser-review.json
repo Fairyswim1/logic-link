@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T07:04:22.387Z",
-  "sourceHash": "84814c8ff0e79eef01395e9155a91d6d21612a61f468c5da7a6aa7c2bbdba844",
+  "checkedAt": "2026-10-30T08:07:43.165Z",
+  "sourceHash": "17e1d3b5918a139d68805c661e02bba65ae5d3c0095da39ee158a03ce4ff8122",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -15,7 +15,9 @@
     "evidence/logic-latex-mobile.png",
     "evidence/logic-latex-desktop.png",
     "evidence/logic-shelf-mobile.png",
-    "evidence/logic-shelf-desktop.png"
+    "evidence/logic-shelf-desktop.png",
+    "evidence/logic-goal-desktop.png",
+    "evidence/logic-goal-mobile.png"
   ],
   "campaign": {
     "roundsPlayed": 34,
@@ -131,5 +133,19 @@
     "tutorialDidNotOverwriteProgress": true,
     "zoomDoesNotChangeProgress": true,
     "earlierFullCampaignChecksRetained": "Engine, levels, scoring and assessment conditions are unchanged; full campaign playthrough recorded above predates this visual revision."
+  },
+  "proofGoalLayout": {
+    "status": "passed",
+    "gameProblems": 18,
+    "noteProblems": 7,
+    "equations": 27,
+    "viewportChecks": 50,
+    "widths": [
+      1280,
+      390
+    ],
+    "overflowFailures": 0,
+    "constructionSmoke": true,
+    "scope": "Presentation only. Conditions split into paragraphs; target equations separated. Existing campaign, tutorial and assessment evidence is inherited from browser-review-before-goal-layout.json; full gameplay was not repeated in this revision."
   }
 }

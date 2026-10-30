@@ -67,3 +67,14 @@ body{word-break:keep-all}.card-text{word-break:normal}@media(min-width:1051px){.
 @media(max-width:650px){#proof-board .card{padding:26px 12px 30px}#proof-board .card::before{border-image-width:24px 11px}#book-grid .book{padding:44px 18px;min-height:190px}#book-grid .book strong{font-size:17px}.tutorial-active #proof-board .card{padding:24px 11px}}
 
 #proof-board .card-text{word-break:keep-all;overflow-wrap:anywhere}
+
+/* Separate hypotheses from the statement students are proving. */
+#problem,#question{min-width:0;line-height:1.85;overflow-wrap:break-word}
+.problem-condition{margin:0 0 .7em;word-break:keep-all}
+.proof-goal{margin:16px 0 4px;padding:12px 10px;background:#17494e;border:1px solid #bca56588;border-radius:12px}
+.proof-goal-label{display:block;font:15px var(--control);color:#e7cf91;margin-bottom:8px}
+.proof-goal-equation{display:block;text-align:center;color:#fff7dc;font-size:20px;line-height:1.9;padding:4px 0}
+.proof-goal-equation .katex{font-size:1em;white-space:normal}
+.proof-goal-equation .katex .base{white-space:nowrap}
+@media(min-width:1051px){.workbench{grid-template-columns:minmax(280px,.8fr) minmax(0,2.4fr)}}
+@media(max-width:650px){.proof-goal{margin:12px 0;padding:12px}.proof-goal-equation{font-size:20px}#problem .problem-condition,#question .problem-condition{margin-bottom:10px}}

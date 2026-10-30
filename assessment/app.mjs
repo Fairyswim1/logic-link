@@ -1,3 +1,4 @@
+import {problemHtml} from '../problem-layout.mjs';
 import {mathHtml} from '../math-text.mjs';
 import {figure,mountFigureZoom} from '../figures.mjs';
 import {createProofBoard} from '../dnd-board.mjs';
@@ -11,7 +12,7 @@ let data={log:[],drafts:{},current:tasks[0].id,review:''};try{data={...data,...J
 let task=tasks.find(t=>t.id===data.current)||tasks[0],state=data.drafts[task.id]||start(task);
 function save(){data.current=task.id;data.drafts[task.id]=state;try{localStorage.setItem(key,JSON.stringify(data));}catch{$('#result').textContent='저장 공간을 확인해 주세요.';}}
 function paint(){
- $('#title').textContent=task.title;$('#question').innerHTML=mathHtml(task.problem);$('#note-figure').innerHTML=figure(task);
+ $('#title').textContent=task.title;$('#question').innerHTML=problemHtml(task);$('#note-figure').innerHTML=figure(task);
  $('#note-nav').innerHTML=tasks.map((t,i)=>'<button data-task="'+t.id+'" class="'+(t.id===task.id?'selected':'')+'">'+(i+1)+'. '+t.title+'</button>').join('');
  renderBoard({level:task,state,onMove:(id,to,index)=>{state=moveCard(state,id,to,index);save();paint();}});
  $('#explanation').value=state.explanation||'';$('#review').value=data.review;

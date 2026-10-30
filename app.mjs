@@ -1,3 +1,4 @@
+import {problemHtml} from './problem-layout.mjs';
 import {mathHtml} from './math-text.mjs';
 import {createProofBoard} from './dnd-board.mjs';
 
@@ -19,7 +20,7 @@ function restore(){const d=save.drafts[level.id];if(d&&d.levelId===level.id&&[..
 if(!ctx.practice)restore();
 function paint(){
  $('#chapter-label').textContent=ctx.practice?'같이 해보는 연습':('중'+level.grade+' · '+(level.kind==='construction'?'작도':'증명')+' · '+chapters.find(c=>c.grade===level.grade).name+' · '+level.unit);
- $('#book-title').textContent=level.title;$('.guide small').textContent=level.kind==='construction'?'자와 컴퍼스를 쓰는 순서를 이어요.':'왜 그런지, 이유를 이어 가요.';$('#problem').innerHTML=mathHtml(level.problem);$('#figure').innerHTML=figure(level);
+ $('#book-title').textContent=level.title;$('.guide small').textContent=level.kind==='construction'?'자와 컴퍼스를 쓰는 순서를 이어요.':'왜 그런지, 이유를 이어 가요.';$('#problem').innerHTML=problemHtml(level);$('#figure').innerHTML=figure(level);
  renderBoard({level,state,onMove:move});
  $('#attempts').textContent=state.won?'복원 완료 · '+'★'.repeat(stars(state)):state.locked?'이번 책은 잠시 닫혔어요':'남은 확인 '+(3-state.failures)+'번 · 필요한 카드 '+level.goal+'장';
  $('#feedback').innerHTML=mathHtml(state.feedback?.message||(level.kind==='construction'?'카드를 끌어 놓아 작도 순서를 맞춰 주세요.':'카드를 끌어 놓아 근거에서 결론까지 이어 주세요.'));

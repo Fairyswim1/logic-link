@@ -1,0 +1,12 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+// Original instrumental loops composed for Logic Link; no sampled recordings.
+const rate=22050;
+const modes={focus:{bpm:72,bars:[[48,55,60,64],[45,52,57,60],[41,48,53,57],[43,50,55,59],[48,55,60,67],[45,52,57,64],[41,48,57,60],[43,50,55,62]],steps:[0,2,1,3]},energy:{bpm:104,bars:[[48,55,60,64],[43,50,55,62],[45,52,57,64],[41,48,53,60],[48,55,60,67],[43,50,59,62],[41,48,57,60],[43,50,55,59]],steps:[0,2,3,2,1,2,3,1]}};
+await mkdir('assets/music',{recursive:true});
+for(const [mode,score]of Object.entries(modes)){
+ const beat=60/score.bpm,seconds=64*beat,n=Math.round(seconds*rate),mix=new Float64Array(n);
+ function note(midi,time,duration,gain,pad=false){const hz=440*2**((midi-69)/12),len=Math.floor(duration*rate),start=Math.round(time*rate);for(let j=0;j<len;j++){const t=j/rate,p=t/duration;const env=pad?Math.sin(Math.PI*p)**2:Math.min(1,t/.012)*Math.exp(-t*2.7)*(1-p)**2;const tone=pad?(Math.sin(2*Math.PI*hz*t)+.16*Math.sin(2*Math.PI*hz*2*t)):(Math.sin(2*Math.PI*hz*t)+.32*Math.sin(2*Math.PI*hz*2*t)+.10*Math.sin(2*Math.PI*hz*3*t));mix[(start+j)%n]+=tone*env*gain;}}
+ for(let bar=0;bar<16;bar++){const chord=score.bars[bar%8],t=bar*4*beat;chord.slice(0,3).forEach(m=>note(m,t,4.5*beat,.045,true));note(chord[0]-12,t,3*beat,.07);score.steps.forEach((idx,k)=>{const time=t+k*4*beat/score.steps.length;note(chord[idx]+12,time,2.6,.10);note(chord[idx]+12,time+beat*.75,2.1,.022);});if(mode==='energy')for(let k=0;k<4;k++)note(chord[k%2]+12,t+k*beat+.5*beat,.35,.035);}
+ let peak=0;for(const v of mix)peak=Math.max(peak,Math.abs(v));const buffer=Buffer.alloc(44+n*2);buffer.write('RIFF');buffer.writeUInt32LE(buffer.length-8,4);buffer.write('WAVEfmt ',8);buffer.writeUInt32LE(16,16);buffer.writeUInt16LE(1,20);buffer.writeUInt16LE(1,22);buffer.writeUInt32LE(rate,24);buffer.writeUInt32LE(rate*2,28);buffer.writeUInt16LE(2,32);buffer.writeUInt16LE(16,34);buffer.write('data',36);buffer.writeUInt32LE(n*2,40);for(let i=0;i<n;i++)buffer.writeInt16LE(Math.round(mix[i]/Math.max(1,peak)*32767),44+i*2);await writeFile('assets/music/'+mode+'.wav',buffer);console.log({mode,seconds,peak,bytes:buffer.length});
+}
+await writeFile('assets/music/credits.json',JSON.stringify({title:'생각을 잇는 서고',origin:'Original synthesized instrumental compositions created for Logic Link',modes:{focus:'72 BPM · warm sustained chords and gentle harp',energy:'104 BPM · brighter harp arpeggios and soft pulse'},generator:'scripts/compose-music.mjs',thirdPartySamples:false},null,2));

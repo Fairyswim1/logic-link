@@ -27,7 +27,7 @@ export function createSound({key,storage,AudioClass,onChange=()=>{}}={}){
 export function bindSoundControls(key){
  const button=document.getElementById('sound'),testButton=document.getElementById('sound-test'),status=document.getElementById('sound-status');
  const sound=createSound({key,onChange:paint});
- function paint(s){if(s.played)status.hidden=true;button.textContent=s.enabled?'소리 끄기':'소리 켜기';button.setAttribute('aria-pressed',String(s.enabled));button.title=s.enabled?'효과음이 켜져 있어요. 누르면 꺼져요.':'효과음을 켜요. 배경음악은 없어요.';if(s.error){status.hidden=false;status.textContent=s.error;}}
+ function paint(s){if(s.played)status.hidden=true;button.textContent=s.enabled?'효과음 끄기':'효과음 켜기';button.setAttribute('aria-pressed',String(s.enabled));button.title=s.enabled?'효과음이 켜져 있어요. 누르면 꺼져요.':'효과음을 켜요. 배경음악은 음악 메뉴에서 따로 고를 수 있어요.';if(s.error){status.hidden=false;status.textContent=s.error;}}
  button.onclick=async()=>{status.hidden=true;if(sound.enabled)sound.setOff();else if(await sound.setOn())await sound.play('test');};
  testButton.onclick=async()=>{testButton.disabled=true;status.hidden=false;status.textContent='시험 소리를 재생하고 있어요…';const r=await sound.test();status.hidden=false;status.textContent=r.ok?'♪ 효과음 신호가 정상이에요. 안 들리면 기기 음량을 확인해 주세요.':sound.state.error||'소리가 꺼졌거나 재생 신호를 확인하지 못했어요. 다시 눌러 주세요.';status.dataset.audioSignal=r.ok?'verified':'unverified';testButton.disabled=false;};
  paint(sound.state);return sound;

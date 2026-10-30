@@ -1,3 +1,4 @@
+import {bindMusicControls} from './music.mjs';
 import {problemHtml} from './problem-layout.mjs';
 import {mathHtml} from './math-text.mjs';
 import {createProofBoard} from './dnd-board.mjs';
@@ -10,6 +11,8 @@ import {bindSoundControls} from './sound.mjs';
 const $=s=>document.querySelector(s),ctx=createTutorialContext('logic-link'),sound=bindSoundControls('logic-link:sound');
 const renderBoard=createProofBoard(document.querySelector('#proof-board'));
 mountFigureZoom();
+bindMusicControls();
+const gradeTopics={1:"기본 도형 · 삼각형 · 작도",2:"삼각형 · 사각형 · 닮음",3:"원의 성질 · 원주각"};
 const key='logic-link:save:v1';let save={completed:{},current:levels[0].id,drafts:{},history:[]};
 try{save={...save,...JSON.parse(ctx.storage.getItem(key)||'{}')};}catch{}
 save.completed=Object.fromEntries(Object.entries(save.completed).filter(([id])=>levels.some(l=>l.id===id)));
@@ -19,7 +22,8 @@ function persist(){try{if(!ctx.practice){save.current=level.id;save.drafts[level
 function restore(){const d=save.drafts[level.id];if(d&&d.levelId===level.id&&[...d.pool,...d.order].length===level.cards.length&&new Set([...d.pool,...d.order]).size===level.cards.length&&[...d.pool,...d.order].every(id=>level.cards.some(c=>c.id===id)))state=d;}
 if(!ctx.practice)restore();
 function paint(){
- $('#chapter-label').textContent=ctx.practice?'같이 해보는 연습':('중'+level.grade+' · '+(level.kind==='construction'?'작도':'증명')+' · '+chapters.find(c=>c.grade===level.grade).name+' · '+level.unit);
+ $('#grade-navigation').innerHTML=chapters.map(c=>'<button data-open-grade="'+c.grade+'" aria-current="'+(level.grade===c.grade?'true':'false')+'"><strong>중학교 '+c.grade+'학년</strong><small>'+gradeTopics[c.grade]+'</small></button>').join('');
+ $('#chapter-label').textContent=ctx.practice?'같이 해보는 연습':('중학교 '+level.grade+'학년 · '+(level.kind==='construction'?'작도':'증명')+' · '+chapters.find(c=>c.grade===level.grade).name+' · '+level.unit);
  $('#book-title').textContent=level.title;$('.guide small').textContent=level.kind==='construction'?'자와 컴퍼스를 쓰는 순서를 이어요.':'왜 그런지, 이유를 이어 가요.';$('#problem').innerHTML=problemHtml(level);$('#figure').innerHTML=figure(level);
  renderBoard({level,state,onMove:move});
  $('#attempts').textContent=state.won?'복원 완료 · '+'★'.repeat(stars(state)):state.locked?'이번 책은 잠시 닫혔어요':'남은 확인 '+(3-state.failures)+'번 · 필요한 카드 '+level.goal+'장';
@@ -31,6 +35,7 @@ function paint(){
 function move(id,to,index){if(state.won||state.locked)return;state=moveCard(state,id,to,index);sound.play('select');persist();paint();}
 function choose(id){level=levels.find(l=>l.id===id);state=start(level);restore();libraryGrade=level.grade;libraryKind=level.kind;$('#library').close();persist();paint();window.scrollTo({top:0});}
 document.addEventListener('click',e=>{
+ const section=e.target.closest('[data-open-grade]');if(section){libraryGrade=Number(section.dataset.openGrade);libraryKind='proof';openLibrary();}
  const book=e.target.closest('[data-book]');if(book)choose(book.dataset.book);
  const kind=e.target.closest('[data-kind]');if(kind){libraryKind=kind.dataset.kind;libraryGrade=libraryKind==='construction'?1:libraryGrade;paintLibrary();}
  const grade=e.target.closest('[data-grade]');if(grade){libraryGrade=Number(grade.dataset.grade);paintLibrary();}
@@ -54,8 +59,9 @@ $('#next-book').onclick=()=>{$('#reward-dialog').close();const section=levels.fi
 $('#reward-shelf').onclick=()=>{$('#reward-dialog').close();openLibrary();};
 function paintLibrary(){
  $('#kind-tabs').innerHTML=[['proof','증명',30],['construction','작도',4]].map(([kind,label,count])=>'<button data-kind="'+kind+'" aria-pressed="'+(libraryKind===kind)+'" class="'+(libraryKind===kind?'selected':'')+'">'+label+' · '+count+'편</button>').join('');
- $('#grade-tabs').hidden=libraryKind==='construction';
- $('#grade-tabs').innerHTML=chapters.map(c=>'<button data-grade="'+c.grade+'" class="'+(libraryGrade===c.grade?'selected':'')+'">중'+c.grade+' '+c.name+'</button>').join('');
+ $('#grade-tabs').hidden=false;
+ $('#grade-description').textContent=libraryKind==='construction'?'중학교 1학년 · 기본 작도와 삼각형 작도':('중학교 '+libraryGrade+'학년 · '+gradeTopics[libraryGrade]);
+ $('#grade-tabs').innerHTML=chapters.map(c=>'<button '+(libraryKind==='construction'&&c.grade!==1?'disabled ':'')+'data-grade="'+c.grade+'" aria-pressed="'+(libraryGrade===c.grade)+'" class="'+(libraryGrade===c.grade?'selected':'')+'">중학교 '+c.grade+'학년</button>').join('');
  $('#collection').innerHTML=chapters.map(c=>{const earned=levels.filter(l=>l.grade===c.grade).every(l=>save.completed[l.id]);return '<div><img src="assets/reward.png" class="'+(earned?'':'locked-medal')+'" alt="'+c.reward+(earned?' 획득':' 미획득')+'"><small>'+c.reward+'</small></div>';}).join('');
  const search=$('#search').value.trim();
  $('#book-grid').innerHTML=levels.filter(l=>l.kind===libraryKind&&l.grade===libraryGrade&&(!search||(l.title+' '+l.unit+' '+l.problem).includes(search))).map(l=>'<button class="book '+(save.completed[l.id]?'is-restored':'is-unrestored')+'" aria-label="'+esc(l.title)+(save.completed[l.id]?' · 복원 완료':' · 복원 전')+'" data-book="'+l.id+'"><strong>'+esc(l.title)+'</strong><small>'+esc(l.unit)+'</small><small class="earned" aria-hidden="true">'+(save.completed[l.id]?'✓ '+'★'.repeat(save.completed[l.id]):'')+'</small></button>').join('')||'<p>찾는 책이 없어요. 다른 단원 이름으로 찾아보세요.</p>';

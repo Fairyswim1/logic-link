@@ -1,0 +1,10 @@
+{
+  "title": "생각을 잇는 서고",
+  "origin": "Original synthesized instrumental compositions created for Logic Link",
+  "modes": {
+    "focus": "72 BPM · warm sustained chords and gentle harp",
+    "energy": "104 BPM · brighter harp arpeggios and soft pulse"
+  },
+  "generator": "scripts/compose-music.mjs",
+  "thirdPartySamples": false
+}

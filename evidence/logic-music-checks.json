@@ -1,0 +1,46 @@
+{
+  "beforeBook": {
+    "paused": false,
+    "src": "http://127.0.0.1:4182/games/logic-link/assets/music/focus.wav",
+    "time": 15.676289
+  },
+  "grade2": {
+    "description": "중학교 2학년 · 삼각형 · 사각형 · 닮음",
+    "books": 13
+  },
+  "afterBook": {
+    "count": 1,
+    "paused": false,
+    "src": "http://127.0.0.1:4182/games/logic-link/assets/music/focus.wav",
+    "time": 16.4058
+  },
+  "modeSwitch": {
+    "paused": false,
+    "src": "http://127.0.0.1:4182/games/logic-link/assets/music/energy.wav",
+    "status": "♪ 활력을 위한 음악 · 책을 바꿔도 이어져요."
+  },
+  "volume": "36%",
+  "paused": true,
+  "restored": {
+    "mode": "energy",
+    "paused": true,
+    "volume": "36"
+  },
+  "grade1": {
+    "description": "중학교 1학년 · 기본 도형 · 삼각형 · 작도",
+    "books": 6
+  },
+  "construction": {
+    "books": 4,
+    "grade2Disabled": true
+  },
+  "grade3": {
+    "description": "중학교 3학년 · 원의 성질 · 원주각",
+    "books": 11
+  },
+  "mobile": {
+    "menuRight": 363.7287826538086,
+    "pageWidth": 376,
+    "width": 376
+  }
+}

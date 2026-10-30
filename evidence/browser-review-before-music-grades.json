@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-30T08:07:43.165Z",
+  "sourceHash": "17e1d3b5918a139d68805c661e02bba65ae5d3c0095da39ee158a03ce4ff8122",
+  "screenshots": [
+    "evidence/proof-desktop-v2.png",
+    "evidence/proof-intro-mobile-v2.png",
+    "evidence/proof-success-mobile-v2.png",
+    "evidence/proof-notes-mobile-v2.png",
+    "evidence/logic-figures-construction.png",
+    "evidence/logic-figures-mobile.png",
+    "evidence/logic-figures-notes-mobile.png",
+    "evidence/logic-figures-tutorial-mobile.png",
+    "evidence/logic-latex-tutorial-success.png",
+    "evidence/logic-latex-mobile.png",
+    "evidence/logic-latex-desktop.png",
+    "evidence/logic-shelf-mobile.png",
+    "evidence/logic-shelf-desktop.png",
+    "evidence/logic-goal-desktop.png",
+    "evidence/logic-goal-mobile.png"
+  ],
+  "campaign": {
+    "roundsPlayed": 34,
+    "allWon": true,
+    "sections": {
+      "proof": 30,
+      "construction": 4
+    },
+    "collection": true,
+    "ending": true,
+    "wrongDependency": true,
+    "retry": true,
+    "multipleOrders": true,
+    "mouseDrag": true,
+    "keyboard": true,
+    "saveRestore": true,
+    "wholeCardDrag": true,
+    "crossList": true,
+    "insertion": true,
+    "cancel": true,
+    "retiredExercisesAbsent": true,
+    "notes": "Keyboard automation at high speed needed placement correction on book-15/34; both subsequently completed through actual UI. All 34 finally won."
+  },
+  "tutorial": {
+    "mobile": true,
+    "actualSuccess": true,
+    "skip": true,
+    "replay": true,
+    "isolated": true,
+    "firstStepDiagram": true
+  },
+  "assessment": {
+    "independent": true,
+    "hint": true,
+    "retry": true,
+    "persistence": true,
+    "report": true,
+    "export": false,
+    "mobile": true,
+    "codes": [
+      "9수03-09",
+      "9수03-10",
+      "9수03-11",
+      "9수03-15",
+      "9수03-18",
+      "9수03-19"
+    ],
+    "tasksPlayed": 2,
+    "tasksAutomated": 12,
+    "note": "Actual new proof submissions, wrong first answer/hint/retry tracked; six domain report visible; export downloaded and feedback saved. All 12 dependency graphs automated.",
+    "jsonUiRemoved": true
+  },
+  "typography": {
+    "status": "passed",
+    "mobileWidth": 390,
+    "overflow": false
+  },
+  "consoleErrors": [],
+  "touch": "Same ddclass library touch sensor enabled; 390px pointer dragging verified, physical touch device not available.",
+  "finalVisualCheck": "All geometry and card math checked at 390px; desktop and mobile shelf colors, mathematical typesetting, zoom and tutorial completion checked.",
+  "previousJsonUiReview": {
+    "checkedAt": "2026-10-30T06:00:10.066Z",
+    "sourceHash": "bd2a251e0da725f4e17d5b542164b34b75bc67992a2f223d4339576e925d1a27",
+    "export": true
+  },
+  "jsonUiRemoval": {
+    "status": "passed",
+    "checkedAt": "2026-10-30T06:16:46.888Z",
+    "scope": "JSON raw preview and download removed. Readable learning results and local progress storage retained. Gameplay, assessment grading and layout otherwise unchanged.",
+    "report": {
+      "exportButtons": 0,
+      "errors": []
+    },
+    "commonSubmission": {
+      "submitted": true,
+      "result": "내 답: 방정식",
+      "persistedAfterReload": true
+    }
+  },
+  "previousGeometryReadabilityReview": {
+    "checkedAt": "2026-10-30T06:17:07.245Z",
+    "sourceHash": "cb7abe029b533ad0b2587a3dadb6c899b1c7106c0bd52f0b8374f303412e58dd"
+  },
+  "geometry": {
+    "status": "passed",
+    "campaignRendered": 34,
+    "independentRendered": 12,
+    "practiceRendered": 1,
+    "all47VisuallyReviewed": true,
+    "all47SvgTextWithinBounds": true,
+    "zoomDesktop": true,
+    "zoom390": true,
+    "escapeClose": true,
+    "notesUseTheirOwnPointNames": true
+  },
+  "readability": {
+    "status": "passed",
+    "mobileWidth": 390,
+    "campaignMathLayoutChecks": 34,
+    "notesMathLayoutChecks": 12,
+    "overflow": false,
+    "mathRenderErrors": 0,
+    "katexSelfHosted": true,
+    "nineSliceCardFrame": true,
+    "darkText": true,
+    "centeredShelf": true,
+    "restoredColorVerifiedWithOneWin": true,
+    "noUnrestoredSentence": true
+  },
+  "regression": {
+    "firstCampaignKeyboardWin": true,
+    "tutorialActualSuccess390": true,
+    "tutorialDidNotOverwriteProgress": true,
+    "zoomDoesNotChangeProgress": true,
+    "earlierFullCampaignChecksRetained": "Engine, levels, scoring and assessment conditions are unchanged; full campaign playthrough recorded above predates this visual revision."
+  },
+  "proofGoalLayout": {
+    "status": "passed",
+    "gameProblems": 18,
+    "noteProblems": 7,
+    "equations": 27,
+    "viewportChecks": 50,
+    "widths": [
+      1280,
+      390
+    ],
+    "overflowFailures": 0,
+    "constructionSmoke": true,
+    "scope": "Presentation only. Conditions split into paragraphs; target equations separated. Existing campaign, tutorial and assessment evidence is inherited from browser-review-before-goal-layout.json; full gameplay was not repeated in this revision."
+  }
+}

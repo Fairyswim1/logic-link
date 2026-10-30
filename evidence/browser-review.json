@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-30T08:07:43.165Z",
-  "sourceHash": "17e1d3b5918a139d68805c661e02bba65ae5d3c0095da39ee158a03ce4ff8122",
+  "checkedAt": "2026-10-30T08:16:56.552Z",
+  "sourceHash": "805e13b3f7c4951bc798653c10c2942968deabd8a47223a501435391cc3adc51",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -17,7 +17,11 @@
     "evidence/logic-shelf-mobile.png",
     "evidence/logic-shelf-desktop.png",
     "evidence/logic-goal-desktop.png",
-    "evidence/logic-goal-mobile.png"
+    "evidence/logic-goal-mobile.png",
+    "evidence/logic-music-desktop.png",
+    "evidence/logic-music-mobile.png",
+    "evidence/logic-grades-mobile.png",
+    "evidence/logic-grades-shelf.png"
   ],
   "campaign": {
     "roundsPlayed": 34,
@@ -147,5 +151,61 @@
     "overflowFailures": 0,
     "constructionSmoke": true,
     "scope": "Presentation only. Conditions split into paragraphs; target equations separated. Existing campaign, tutorial and assessment evidence is inherited from browser-review-before-goal-layout.json; full gameplay was not repeated in this revision."
+  },
+  "musicGradeRevision": {
+    "status": "passed",
+    "checks": {
+      "beforeBook": {
+        "paused": false,
+        "src": "http://127.0.0.1:4182/games/logic-link/assets/music/focus.wav",
+        "time": 15.676289
+      },
+      "grade2": {
+        "description": "중학교 2학년 · 삼각형 · 사각형 · 닮음",
+        "books": 13
+      },
+      "afterBook": {
+        "count": 1,
+        "paused": false,
+        "src": "http://127.0.0.1:4182/games/logic-link/assets/music/focus.wav",
+        "time": 16.4058
+      },
+      "modeSwitch": {
+        "paused": false,
+        "src": "http://127.0.0.1:4182/games/logic-link/assets/music/energy.wav",
+        "status": "♪ 활력을 위한 음악 · 책을 바꿔도 이어져요."
+      },
+      "volume": "36%",
+      "paused": true,
+      "restored": {
+        "mode": "energy",
+        "paused": true,
+        "volume": "36"
+      },
+      "grade1": {
+        "description": "중학교 1학년 · 기본 도형 · 삼각형 · 작도",
+        "books": 6
+      },
+      "construction": {
+        "books": 4,
+        "grade2Disabled": true
+      },
+      "grade3": {
+        "description": "중학교 3학년 · 원의 성질 · 원주각",
+        "books": 11
+      },
+      "mobile": {
+        "menuRight": 363.7287826538086,
+        "pageWidth": 376,
+        "width": 376
+      }
+    },
+    "modes": [
+      "focus",
+      "energy"
+    ],
+    "favicon": "assets/favicon.svg",
+    "audioValidation": "Browser decoded and played both WAV tracks; playback currentTime advanced across book change; waveform nonzero and unclipped. No claim of listening or student evaluation.",
+    "scope": "Grade navigation, soundtrack, favicon. Existing full-campaign and assessment browser evidence retained as historical baseline; gameplay logic unchanged."
   }
 }

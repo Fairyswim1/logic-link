@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "checkedAt": "2026-10-30T08:16:56.552Z",
-  "sourceHash": "805e13b3f7c4951bc798653c10c2942968deabd8a47223a501435391cc3adc51",
+  "sourceHash": "104ec831c7e5a3c982426f61e0bc9b3c3539cfd206e9abbbebba706183b36f6b",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -207,5 +207,26 @@
     "favicon": "assets/favicon.svg",
     "audioValidation": "Browser decoded and played both WAV tracks; playback currentTime advanced across book change; waveform nonzero and unclipped. No claim of listening or student evaluation.",
     "scope": "Grade navigation, soundtrack, favicon. Existing full-campaign and assessment browser evidence retained as historical baseline; gameplay logic unchanged."
+  },
+  "audioRefresh": {
+    "id": "logic-link",
+    "checkedAt": "2026-11-05T04:11:23.792324+00:00",
+    "method": "Chrome actual UI clicks through cua_repl; music HTMLAudioElement readyState/currentTime; effects analyser test",
+    "focus": {
+      "playing": true,
+      "readyState": 4
+    },
+    "energy": {
+      "playing": true,
+      "readyState": 4
+    },
+    "effectsSignal": true,
+    "independentEffectsMute": true,
+    "musicStop": true,
+    "mobileWidth": 390,
+    "horizontalOverflow": false,
+    "musicMenuInBounds": true,
+    "consoleErrors": [],
+    "scope": "Audio-only change. Previous full gameplay/assessment verification retained; all automated gameplay tests rerun."
   }
 }

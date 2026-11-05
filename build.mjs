@@ -5,3 +5,5 @@ import {mkdir,copyFile,cp,writeFile} from 'node:fs/promises';import {execFileSyn
 await copyFile('problem-layout.mjs','dist/problem-layout.mjs');
 
 await copyFile('music.mjs','dist/music.mjs');
+
+for(const f of ['music.mjs','music.css'])await copyFile(f,'dist/'+f);

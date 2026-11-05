@@ -1,10 +1,42 @@
 {
-  "title": "생각을 잇는 서고",
-  "origin": "Original synthesized instrumental compositions created for Logic Link",
-  "modes": {
-    "focus": "72 BPM · warm sustained chords and gentle harp",
-    "energy": "104 BPM · brighter harp arpeggios and soft pulse"
+  "title": "고요한 서고",
+  "origin": "Original synthesized stereo compositions; no third-party samples",
+  "profile": {
+    "title": "고요한 서고",
+    "root": 60,
+    "bpm": 68,
+    "color": "felt",
+    "minor": false,
+    "motif": [
+      0,
+      4,
+      7,
+      11,
+      9,
+      7,
+      4,
+      2
+    ]
   },
-  "generator": "scripts/compose-music.mjs",
-  "thirdPartySamples": false
+  "generator": "scripts/compose-music.py",
+  "tracks": [
+    {
+      "mode": "focus",
+      "bpm": 68,
+      "seconds": 56.470566893424035,
+      "peak": 0.22628079828434838,
+      "rms": 0.05242736502890781,
+      "seamDelta": 0.0017501203724812966,
+      "sha256": "046f55699434b8769ff2703225996febd7054fc8e59618dfddbd85b126e71290"
+    },
+    {
+      "mode": "energy",
+      "bpm": 92,
+      "seconds": 41.73913832199546,
+      "peak": 0.30897297095001647,
+      "rms": 0.06306475485230158,
+      "seamDelta": 0.00029152217865108937,
+      "sha256": "b38c2dd5c24b889380232f3084351d831bffaa471fe0e78afd045cb5166853d1"
+    }
+  ]
 }

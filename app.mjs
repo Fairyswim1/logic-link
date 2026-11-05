@@ -1,4 +1,4 @@
-import {bindMusicControls} from './music.mjs';
+
 import {problemHtml} from './problem-layout.mjs';
 import {mathHtml} from './math-text.mjs';
 import {createProofBoard} from './dnd-board.mjs';
@@ -11,7 +11,7 @@ import {bindSoundControls} from './sound.mjs';
 const $=s=>document.querySelector(s),ctx=createTutorialContext('logic-link'),sound=bindSoundControls('logic-link:sound');
 const renderBoard=createProofBoard(document.querySelector('#proof-board'));
 mountFigureZoom();
-bindMusicControls();
+
 const gradeTopics={1:"기본 도형 · 삼각형 · 작도",2:"삼각형 · 사각형 · 닮음",3:"원의 성질 · 원주각"};
 const key='logic-link:save:v1';let save={completed:{},current:levels[0].id,drafts:{},history:[]};
 try{save={...save,...JSON.parse(ctx.storage.getItem(key)||'{}')};}catch{}

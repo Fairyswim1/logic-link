@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "checkedAt": "2026-10-30T08:16:56.552Z",
-  "sourceHash": "104ec831c7e5a3c982426f61e0bc9b3c3539cfd206e9abbbebba706183b36f6b",
+  "sourceHash": "6097d003da068c572221d291f379955fe70c1e3da9156f48d355bfc3f0ccd78b",
   "screenshots": [
     "evidence/proof-desktop-v2.png",
     "evidence/proof-intro-mobile-v2.png",
@@ -21,7 +21,8 @@
     "evidence/logic-music-desktop.png",
     "evidence/logic-music-mobile.png",
     "evidence/logic-grades-mobile.png",
-    "evidence/logic-grades-shelf.png"
+    "evidence/logic-grades-shelf.png",
+    "evidence/first-visit-mobile.png"
   ],
   "campaign": {
     "roundsPlayed": 34,
@@ -228,5 +229,17 @@
     "musicMenuInBounds": true,
     "consoleErrors": [],
     "scope": "Audio-only change. Previous full gameplay/assessment verification retained; all automated gameplay tests rerun."
+  },
+  "firstVisitRevision": {
+    "checkedAt": "2026-11-06T04:44:50.790Z",
+    "id": "logic-link",
+    "firstVisitOff": true,
+    "startedStep": "증명은 이유를 잇는 일이에요",
+    "skipCleanUrl": true,
+    "reloadNoTour": true,
+    "replay": true,
+    "mobileWidth": 390,
+    "previousSourceHash": "104ec831c7e5a3c982426f61e0bc9b3c3539cfd206e9abbbebba706183b36f6b",
+    "scope": "First-visit decision, isolated tutorial initialization, exit/reload and replay. Prior math and assessment browser evidence retained; existing automated suites rerun."
   }
 }

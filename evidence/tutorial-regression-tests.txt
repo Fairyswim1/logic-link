@@ -1,0 +1,660 @@
+TAP version 13
+# Subtest: book-14 solvable, dependencies resolve, extras rejected
+ok 1 - book-14 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 2.8946
+  ...
+# Subtest: book-15 solvable, dependencies resolve, extras rejected
+ok 2 - book-15 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.3722
+  ...
+# Subtest: book-16 solvable, dependencies resolve, extras rejected
+ok 3 - book-16 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.4192
+  ...
+# Subtest: book-17 solvable, dependencies resolve, extras rejected
+ok 4 - book-17 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2716
+  ...
+# Subtest: book-58 solvable, dependencies resolve, extras rejected
+ok 5 - book-58 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1586
+  ...
+# Subtest: book-59 solvable, dependencies resolve, extras rejected
+ok 6 - book-59 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1275
+  ...
+# Subtest: book-23 solvable, dependencies resolve, extras rejected
+ok 7 - book-23 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.3506
+  ...
+# Subtest: book-26 solvable, dependencies resolve, extras rejected
+ok 8 - book-26 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1689
+  ...
+# Subtest: book-28 solvable, dependencies resolve, extras rejected
+ok 9 - book-28 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.5831
+  ...
+# Subtest: book-29 solvable, dependencies resolve, extras rejected
+ok 10 - book-29 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 1.4613
+  ...
+# Subtest: book-30 solvable, dependencies resolve, extras rejected
+ok 11 - book-30 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.2511
+  ...
+# Subtest: book-31 solvable, dependencies resolve, extras rejected
+ok 12 - book-31 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1442
+  ...
+# Subtest: book-32 solvable, dependencies resolve, extras rejected
+ok 13 - book-32 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1081
+  ...
+# Subtest: book-33 solvable, dependencies resolve, extras rejected
+ok 14 - book-33 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1232
+  ...
+# Subtest: book-34 solvable, dependencies resolve, extras rejected
+ok 15 - book-34 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1176
+  ...
+# Subtest: book-35 solvable, dependencies resolve, extras rejected
+ok 16 - book-35 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1635
+  ...
+# Subtest: book-36 solvable, dependencies resolve, extras rejected
+ok 17 - book-36 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1106
+  ...
+# Subtest: book-38 solvable, dependencies resolve, extras rejected
+ok 18 - book-38 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1112
+  ...
+# Subtest: book-39 solvable, dependencies resolve, extras rejected
+ok 19 - book-39 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1059
+  ...
+# Subtest: book-47 solvable, dependencies resolve, extras rejected
+ok 20 - book-47 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1111
+  ...
+# Subtest: book-49 solvable, dependencies resolve, extras rejected
+ok 21 - book-49 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1386
+  ...
+# Subtest: book-50 solvable, dependencies resolve, extras rejected
+ok 22 - book-50 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1391
+  ...
+# Subtest: book-51 solvable, dependencies resolve, extras rejected
+ok 23 - book-51 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1454
+  ...
+# Subtest: book-52 solvable, dependencies resolve, extras rejected
+ok 24 - book-52 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1696
+  ...
+# Subtest: book-53 solvable, dependencies resolve, extras rejected
+ok 25 - book-53 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1569
+  ...
+# Subtest: book-54 solvable, dependencies resolve, extras rejected
+ok 26 - book-54 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1243
+  ...
+# Subtest: book-55 solvable, dependencies resolve, extras rejected
+ok 27 - book-55 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1284
+  ...
+# Subtest: book-56 solvable, dependencies resolve, extras rejected
+ok 28 - book-56 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1552
+  ...
+# Subtest: book-63 solvable, dependencies resolve, extras rejected
+ok 29 - book-63 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1439
+  ...
+# Subtest: book-64 solvable, dependencies resolve, extras rejected
+ok 30 - book-64 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1357
+  ...
+# Subtest: book-11 solvable, dependencies resolve, extras rejected
+ok 31 - book-11 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1434
+  ...
+# Subtest: book-12 solvable, dependencies resolve, extras rejected
+ok 32 - book-12 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1618
+  ...
+# Subtest: book-13 solvable, dependencies resolve, extras rejected
+ok 33 - book-13 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1544
+  ...
+# Subtest: book-57 solvable, dependencies resolve, extras rejected
+ok 34 - book-57 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1745
+  ...
+# Subtest: proof-note-1 solvable, dependencies resolve, extras rejected
+ok 35 - proof-note-1 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1646
+  ...
+# Subtest: proof-note-2 solvable, dependencies resolve, extras rejected
+ok 36 - proof-note-2 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1421
+  ...
+# Subtest: proof-note-3 solvable, dependencies resolve, extras rejected
+ok 37 - proof-note-3 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0948
+  ...
+# Subtest: proof-note-4 solvable, dependencies resolve, extras rejected
+ok 38 - proof-note-4 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0883
+  ...
+# Subtest: proof-note-5 solvable, dependencies resolve, extras rejected
+ok 39 - proof-note-5 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1598
+  ...
+# Subtest: proof-note-6 solvable, dependencies resolve, extras rejected
+ok 40 - proof-note-6 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1526
+  ...
+# Subtest: proof-note-7 solvable, dependencies resolve, extras rejected
+ok 41 - proof-note-7 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1708
+  ...
+# Subtest: proof-note-8 solvable, dependencies resolve, extras rejected
+ok 42 - proof-note-8 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1426
+  ...
+# Subtest: proof-note-9 solvable, dependencies resolve, extras rejected
+ok 43 - proof-note-9 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0911
+  ...
+# Subtest: proof-note-10 solvable, dependencies resolve, extras rejected
+ok 44 - proof-note-10 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.0972
+  ...
+# Subtest: proof-note-11 solvable, dependencies resolve, extras rejected
+ok 45 - proof-note-11 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.306
+  ...
+# Subtest: proof-note-12 solvable, dependencies resolve, extras rejected
+ok 46 - proof-note-12 solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1433
+  ...
+# Subtest: practice-proof solvable, dependencies resolve, extras rejected
+ok 47 - practice-proof solvable, dependencies resolve, extras rejected
+  ---
+  duration_ms: 0.1361
+  ...
+# Subtest: Independent premises accept a genuinely different order
+ok 48 - Independent premises accept a genuinely different order
+  ---
+  duration_ms: 1.0922
+  ...
+# Subtest: Conclusion-first strategy fails although all proof cards are true
+ok 49 - Conclusion-first strategy fails although all proof cards are true
+  ---
+  duration_ms: 0.2201
+  ...
+# Subtest: Three checks have a cost; retry and hint rewards differ
+ok 50 - Three checks have a cost; retry and hint rewards differ
+  ---
+  duration_ms: 0.8096
+  ...
+# Subtest: Move preserves each card once, supports inserting and returning
+ok 51 - Move preserves each card once, supports inserting and returning
+  ---
+  duration_ms: 0.219
+  ...
+# Subtest: Independent assessment never counts retry, hint, or duplicate tasks
+ok 52 - Independent assessment never counts retry, hint, or duplicate tasks
+  ---
+  duration_ms: 2.8981
+  ...
+# Subtest: Tutorial storage stays independent of progress and notes
+ok 53 - Tutorial storage stays independent of progress and notes
+  ---
+  duration_ms: 0.8409
+  ...
+# Subtest: Isosceles and tangent proof facts checked by coordinates
+ok 54 - Isosceles and tangent proof facts checked by coordinates
+  ---
+  duration_ms: 0.3175
+  ...
+# Subtest: Coverage and generated assets are standalone
+ok 55 - Coverage and generated assets are standalone
+  ---
+  duration_ms: 185.64
+  ...
+# Subtest: Proof and construction only; retired numeric exercises absent
+ok 56 - Proof and construction only; retired numeric exercises absent
+  ---
+  duration_ms: 0.4434
+  ...
+# Subtest: Ddclass insert indexes work for every source and destination in both lists
+ok 57 - Ddclass insert indexes work for every source and destination in both lists
+  ---
+  duration_ms: 1.872
+  ...
+# Subtest: book-14 has geometry that satisfies its marked conditions
+ok 58 - book-14 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 3.3764
+  ...
+# Subtest: book-15 has geometry that satisfies its marked conditions
+ok 59 - book-15 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 1.1816
+  ...
+# Subtest: book-16 has geometry that satisfies its marked conditions
+ok 60 - book-16 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4051
+  ...
+# Subtest: book-17 has geometry that satisfies its marked conditions
+ok 61 - book-17 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.776
+  ...
+# Subtest: book-58 has geometry that satisfies its marked conditions
+ok 62 - book-58 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.6295
+  ...
+# Subtest: book-59 has geometry that satisfies its marked conditions
+ok 63 - book-59 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 1.1077
+  ...
+# Subtest: book-23 has geometry that satisfies its marked conditions
+ok 64 - book-23 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.7299
+  ...
+# Subtest: book-26 has geometry that satisfies its marked conditions
+ok 65 - book-26 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2668
+  ...
+# Subtest: book-28 has geometry that satisfies its marked conditions
+ok 66 - book-28 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.7751
+  ...
+# Subtest: book-29 has geometry that satisfies its marked conditions
+ok 67 - book-29 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 1.2275
+  ...
+# Subtest: book-30 has geometry that satisfies its marked conditions
+ok 68 - book-30 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.5035
+  ...
+# Subtest: book-31 has geometry that satisfies its marked conditions
+ok 69 - book-31 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.5015
+  ...
+# Subtest: book-32 has geometry that satisfies its marked conditions
+ok 70 - book-32 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.5172
+  ...
+# Subtest: book-33 has geometry that satisfies its marked conditions
+ok 71 - book-33 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.5036
+  ...
+# Subtest: book-34 has geometry that satisfies its marked conditions
+ok 72 - book-34 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3709
+  ...
+# Subtest: book-35 has geometry that satisfies its marked conditions
+ok 73 - book-35 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3413
+  ...
+# Subtest: book-36 has geometry that satisfies its marked conditions
+ok 74 - book-36 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2645
+  ...
+# Subtest: book-38 has geometry that satisfies its marked conditions
+ok 75 - book-38 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2724
+  ...
+# Subtest: book-39 has geometry that satisfies its marked conditions
+ok 76 - book-39 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4736
+  ...
+# Subtest: book-47 has geometry that satisfies its marked conditions
+ok 77 - book-47 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3893
+  ...
+# Subtest: book-49 has geometry that satisfies its marked conditions
+ok 78 - book-49 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3642
+  ...
+# Subtest: book-50 has geometry that satisfies its marked conditions
+ok 79 - book-50 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4479
+  ...
+# Subtest: book-51 has geometry that satisfies its marked conditions
+ok 80 - book-51 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.5505
+  ...
+# Subtest: book-52 has geometry that satisfies its marked conditions
+ok 81 - book-52 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4666
+  ...
+# Subtest: book-53 has geometry that satisfies its marked conditions
+ok 82 - book-53 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2938
+  ...
+# Subtest: book-54 has geometry that satisfies its marked conditions
+ok 83 - book-54 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 1.1083
+  ...
+# Subtest: book-55 has geometry that satisfies its marked conditions
+ok 84 - book-55 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3617
+  ...
+# Subtest: book-56 has geometry that satisfies its marked conditions
+ok 85 - book-56 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3569
+  ...
+# Subtest: book-63 has geometry that satisfies its marked conditions
+ok 86 - book-63 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4336
+  ...
+# Subtest: book-64 has geometry that satisfies its marked conditions
+ok 87 - book-64 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2598
+  ...
+# Subtest: book-11 has geometry that satisfies its marked conditions
+ok 88 - book-11 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.464
+  ...
+# Subtest: book-12 has geometry that satisfies its marked conditions
+ok 89 - book-12 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2299
+  ...
+# Subtest: book-13 has geometry that satisfies its marked conditions
+ok 90 - book-13 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3517
+  ...
+# Subtest: book-57 has geometry that satisfies its marked conditions
+ok 91 - book-57 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2147
+  ...
+# Subtest: proof-note-1 has geometry that satisfies its marked conditions
+ok 92 - proof-note-1 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2993
+  ...
+# Subtest: proof-note-2 has geometry that satisfies its marked conditions
+ok 93 - proof-note-2 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2407
+  ...
+# Subtest: proof-note-3 has geometry that satisfies its marked conditions
+ok 94 - proof-note-3 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4387
+  ...
+# Subtest: proof-note-4 has geometry that satisfies its marked conditions
+ok 95 - proof-note-4 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.4282
+  ...
+# Subtest: proof-note-5 has geometry that satisfies its marked conditions
+ok 96 - proof-note-5 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2896
+  ...
+# Subtest: proof-note-6 has geometry that satisfies its marked conditions
+ok 97 - proof-note-6 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2549
+  ...
+# Subtest: proof-note-7 has geometry that satisfies its marked conditions
+ok 98 - proof-note-7 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.3096
+  ...
+# Subtest: proof-note-8 has geometry that satisfies its marked conditions
+ok 99 - proof-note-8 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.249
+  ...
+# Subtest: proof-note-9 has geometry that satisfies its marked conditions
+ok 100 - proof-note-9 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.2425
+  ...
+# Subtest: proof-note-10 has geometry that satisfies its marked conditions
+ok 101 - proof-note-10 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.568
+  ...
+# Subtest: proof-note-11 has geometry that satisfies its marked conditions
+ok 102 - proof-note-11 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.28
+  ...
+# Subtest: proof-note-12 has geometry that satisfies its marked conditions
+ok 103 - proof-note-12 has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.26
+  ...
+# Subtest: practice-proof has geometry that satisfies its marked conditions
+ok 104 - practice-proof has geometry that satisfies its marked conditions
+  ---
+  duration_ms: 0.593
+  ...
+# Subtest: circle-angle case diagrams place O and auxiliary diameter in the stated sectors
+ok 105 - circle-angle case diagrams place O and auxiliary diameter in the stated sectors
+  ---
+  duration_ms: 0.373
+  ...
+# Subtest: construction dimensions are 4:5:6 and 5:4 with included 60 degrees
+ok 106 - construction dimensions are 4:5:6 and 5:4 with included 60 degrees
+  ---
+  duration_ms: 0.2394
+  ...
+# Subtest: transversal points really lie on one line
+ok 107 - transversal points really lie on one line
+  ---
+  duration_ms: 0.1234
+  ...
+# Subtest: independent tasks retain their new point names
+ok 108 - independent tasks retain their new point names
+  ---
+  duration_ms: 0.4144
+  ...
+# Subtest: every problem and card renders valid LaTeX without changing its original sentence
+ok 109 - every problem and card renders valid LaTeX without changing its original sentence
+  ---
+  duration_ms: 79.7481
+  ...
+# Subtest: fractions, powers, degrees and geometry relations use the correct notation
+ok 110 - fractions, powers, degrees and geometry relations use the correct notation
+  ---
+  duration_ms: 0.2257
+  ...
+# Subtest: ordinary text is escaped and math commands cannot be injected from text
+ok 111 - ordinary text is escaped and math commands cannot be injected from text
+  ---
+  duration_ms: 0.6481
+  ...
+# Subtest: music starts only after explicit play; loops and resumes without resetting position
+ok 112 - music starts only after explicit play; loops and resumes without resetting position
+  ---
+  duration_ms: 1.8044
+  ...
+# Subtest: mode change preserves playing state and writes only preferences
+ok 113 - mode change preserves playing state and writes only preferences
+  ---
+  duration_ms: 2.2384
+  ...
+# Subtest: saved mode and volume load without autoplay
+ok 114 - saved mode and volume load without autoplay
+  ---
+  duration_ms: 0.3036
+  ...
+# Subtest: invalid preferences and modes cannot select arbitrary sources
+ok 115 - invalid preferences and modes cannot select arbitrary sources
+  ---
+  duration_ms: 0.2682
+  ...
+# Subtest: blocked playback exposes recovery without claiming playback
+ok 116 - blocked playback exposes recovery without claiming playback
+  ---
+  duration_ms: 0.2793
+  ...
+# Subtest: pause cancels a pending play state update
+ok 117 - pause cancels a pending play state update
+  ---
+  duration_ms: 0.231
+  ...
+# Subtest: older play completion cannot silence the newer request
+ok 118 - older play completion cannot silence the newer request
+  ---
+  duration_ms: 0.2888
+  ...
+# Subtest: muted effects never start; enable, play and mute stop active oscillators
+ok 119 - muted effects never start; enable, play and mute stop active oscillators
+  ---
+  duration_ms: 2.9876
+  ...
+# Subtest: preference survives new controller and test checks a generated waveform
+ok 120 - preference survives new controller and test checks a generated waveform
+  ---
+  duration_ms: 83.4084
+  ...
+# Subtest: blocked playback returns an error instead of falsely reporting enabled sound
+ok 121 - blocked playback returns an error instead of falsely reporting enabled sound
+  ---
+  duration_ms: 0.5454
+  ...
+# Subtest: muting while resume is pending cannot re-enable playback
+ok 122 - muting while resume is pending cannot re-enable playback
+  ---
+  duration_ms: 0.3005
+  ...
+# Subtest: unavailable storage does not prevent sound playback
+ok 123 - unavailable storage does not prevent sound playback
+  ---
+  duration_ms: 0.4122
+  ...
+# Subtest: first visit always starts, including an old shared off URL
+ok 124 - first visit always starts, including an old shared off URL
+  ---
+  duration_ms: 1.7557
+  ...
+# Subtest: opening, abandoning, and refreshing do not mark the guide finished
+ok 125 - opening, abandoning, and refreshing do not mark the guide finished
+  ---
+  duration_ms: 1.5049
+  ...
+# Subtest: completion and explicit skip persist per game, with a clean shareable URL
+ok 126 - completion and explicit skip persist per game, with a clean shareable URL
+  ---
+  duration_ms: 3.767
+  ...
+# Subtest: old valid completion is preserved; corrupt or started records do not skip
+ok 127 - old valid completion is preserved; corrupt or started records do not skip
+  ---
+  duration_ms: 0.5487
+  ...
+# Subtest: replay and practice never overwrite campaign or assessment records
+ok 128 - replay and practice never overwrite campaign or assessment records
+  ---
+  duration_ms: 0.3313
+  ...
+# Subtest: blocked local storage uses session completion without a redirect loop
+ok 129 - blocked local storage uses session completion without a redirect loop
+  ---
+  duration_ms: 0.3587
+  ...
+# Subtest: both storage APIs blocked: same-tab history survives reload but shared URL does not skip
+ok 130 - both storage APIs blocked: same-tab history survives reload but shared URL does not skip
+  ---
+  duration_ms: 0.3705
+  ...
+1..130
+# tests 130
+# suites 0
+# pass 130
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 451.2594
